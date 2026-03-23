@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The WW2 Era — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/landing.css" />
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">✈</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-ww2.html" class="nav-link active">WW2 Era</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero" style="height:55vh;">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Into_the_Jaws_of_Death_23-0455M_edit.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">✈ 1939–1945</div>
+    <h1 class="story-title" style="font-size:clamp(2rem,5vw,4rem);">World War II</h1>
+    <p class="story-subtitle">The sequel that outdid the original in every conceivable terrible way — 70 million dead, six years, every continent</p>
+  </div>
+</section>
+
+<section style="padding:60px 40px;max-width:1200px;margin:0 auto;">
+  <div class="section-header reveal" style="text-align:center;margin-bottom:60px;">
+    <div style="font-family:'Special Elite',cursive;color:var(--gold);letter-spacing:4px;font-size:0.85rem;margin-bottom:12px;">THE DEFINING CONFLICT OF THE MODERN WORLD</div>
+    <h2 style="font-family:'Cinzel Decorative',serif;font-size:clamp(1.5rem,3vw,2.5rem);color:var(--parchment);">World War II</h2>
+    <p style="color:rgba(242,232,208,0.7);max-width:600px;margin:20px auto;font-family:'Crimson Pro',serif;font-size:1.1rem;">The war that defines the modern world's moral architecture — the Holocaust, the atomic bomb, the United Nations, and the determination to build something better from the ruins.</p>
+  </div>
+
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="era-card reveal" style="display:flex;flex-direction:row;gap:30px;max-width:100%;">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H28422%2C_Paris%2C_Adolf_Hitler_in_der_Oper.jpg');flex:0 0 300px;height:280px;"></div>
+      <div class="era-card-body" style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="era-card-meta">1939–1945 · GLOBAL</div>
+        <h3 class="era-card-title">World War II</h3>
+        <p class="era-card-excerpt">Hitler's rise, Blitzkrieg, Dunkirk, the Battle of Britain, Barbarossa, Stalingrad, Pearl Harbor, the Holocaust, D-Day, Hiroshima. The story of humanity's worst six years — and its greatest collective response to evil.</p>
+        <a href="war-ww2.html" class="era-card-link">READ THE FULL STORY →</a>
+      </div>
+    </div>
+
+    <div style="margin:50px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div style="background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);padding:30px;" class="reveal">
+        <div style="font-family:'Special Elite',cursive;color:var(--gold);font-size:0.8rem;letter-spacing:3px;margin-bottom:12px;">BY THE NUMBERS</div>
+        <p style="font-family:'Crimson Pro',serif;color:rgba(242,232,208,0.8);line-height:1.8;">70–85 million dead · 6 years · Fought on every continent · 6 million Jews murdered in the Holocaust · 27 million Soviet deaths · 2 atomic bombs dropped</p>
+      </div>
+      <div style="background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);padding:30px;" class="reveal">
+        <div style="font-family:'Special Elite',cursive;color:var(--gold);font-size:0.8rem;letter-spacing:3px;margin-bottom:12px;">THE LEGACY</div>
+        <p style="font-family:'Crimson Pro',serif;color:rgba(242,232,208,0.8);line-height:1.8;">The United Nations · NATO · The European Union · The Universal Declaration of Human Rights · The state of Israel · The Cold War — the entire architecture of the modern world was built in WW2's aftermath.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="text-align:center;margin-top:40px;">
+    <a href="all-wars.html" style="font-family:'Cinzel',serif;color:var(--gold);border:1px solid var(--gold);padding:14px 32px;letter-spacing:3px;font-size:0.85rem;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--void)'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">VIEW ALL ERAS →</a>
+  </div>
+</section>
+
+<footer class="main-footer"><div class="footer-inner"><div class="footer-logo">⚔ CHRONICLES OF WAR</div><p class="footer-copy">© 2024 Chronicles of War</p></div></footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

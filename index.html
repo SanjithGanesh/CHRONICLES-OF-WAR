@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHRONICLES OF WAR — A History of Humanity's Worst Decisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">⚔</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- PARTICLES CANVAS -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="nav-logo">
+    <span class="nav-sword">⚔</span>
+    <span class="nav-title">CHRONICLES OF WAR</span>
+  </div>
+  <div class="nav-links">
+    <a href="#timeline" class="nav-link">Timeline</a>
+    <a href="#eras" class="nav-link">Eras</a>
+    <a href="pages/all-wars.html" class="nav-link">All Wars</a>
+  </div>
+  <div class="nav-menu-btn" id="menuBtn">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero">
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-smoke"></div>
+
+  <!-- Floating historical portraits -->
+  <div class="floating-portraits">
+    <div class="portrait p1" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg')"></div>
+    <div class="portrait p2" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H1216-0500-002%2C_Adolf_Hitler.jpg')"></div>
+    <div class="portrait p3" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Lenin_Cheka.jpg')"></div>
+    <div class="portrait p4" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Stalin_Full_Image.jpg')"></div>
+    <div class="portrait p5" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_Lincoln_-_Presidency.jpg')"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">🌍 A SATIRICAL HISTORY OF HUMANKIND</div>
+    <h1 class="hero-title">
+      <span class="title-line t1">CHRONICLES</span>
+      <span class="title-line t2">OF</span>
+      <span class="title-line t3">WAR</span>
+    </h1>
+    <p class="hero-subtitle">
+      Because apparently, after 300 years of the same mistakes,<br/>
+      someone has to explain it with pictures.
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Major Wars</span></div>
+      <div class="stat-divider">|</div>
+      <div class="stat"><span class="stat-num">300+</span><span class="stat-label">Years Covered</span></div>
+      <div class="stat-divider">|</div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Bad Decisions</span></div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="#timeline" class="cta-btn cta-primary">
+        <span>BEGIN THE STORY</span>
+        <div class="btn-shimmer"></div>
+      </a>
+      <a href="pages/all-wars.html" class="cta-btn cta-secondary">
+        BROWSE ALL WARS
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>SCROLL TO EXPLORE</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- CINEMATIC INTRO STRIP -->
+<section id="intro-strip">
+  <div class="strip-content">
+    <p class="strip-quote">"Those who cannot remember the past are condemned to repeat it."</p>
+    <p class="strip-attr">— George Santayana, 1905. Clearly, nobody listened.</p>
+  </div>
+</section>
+
+<!-- ERA CARDS SECTION -->
+<section id="eras">
+  <div class="section-header">
+    <div class="section-tag">NAVIGATE BY ERA</div>
+    <h2 class="section-title">Choose Your Chapter of Chaos</h2>
+    <p class="section-sub">From powdered wigs to nuclear missiles — humanity's greatest hits (and misses)</p>
+  </div>
+
+  <div class="eras-grid">
+
+    <a href="pages/era-early-modern.html" class="era-card" data-era="1700">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg')"></div>
+      <div class="era-card-overlay"></div>
+      <div class="era-card-content">
+        <div class="era-years">1700 — 1815</div>
+        <div class="era-icon">👑</div>
+        <h3 class="era-name">Early Modern Wars</h3>
+        <p class="era-desc">Powdered wigs, muskets, and Europe's messiest divorce proceedings</p>
+        <div class="era-wars-count">4 Wars</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-19th-century.html" class="era-card" data-era="1815">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #1a0a00, rgba(26,10,0,0.3))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1815 — 1914</div>
+        <div class="era-icon">🏭</div>
+        <h3 class="era-name">19th Century Power Shifts</h3>
+        <p class="era-desc">Industrialization, colonialism, and nations discovering they really hate each other</p>
+        <div class="era-wars-count">5 Wars</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-ww1.html" class="era-card era-featured" data-era="1914">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #0a0000, rgba(10,0,0,0.2))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1914 — 1918</div>
+        <div class="era-icon">💣</div>
+        <h3 class="era-name">World War I</h3>
+        <p class="era-desc">The "War to End All Wars." Spoiler: it didn't.</p>
+        <div class="era-wars-count">THE BIG ONE</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-interwar.html" class="era-card" data-era="1917">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Milicianas.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #0a0014, rgba(10,0,20,0.3))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1917 — 1939</div>
+        <div class="era-icon">🔥</div>
+        <h3 class="era-name">Revolutions & Interwar</h3>
+        <p class="era-desc">Communism! Fascism! It's ideology speed-dating and nobody's happy</p>
+        <div class="era-wars-count">4 Conflicts</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-ww2.html" class="era-card era-featured" data-era="1939">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H28422%2C_Paris%2C_Adolf_Hitler_in_der_Oper.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #000a00, rgba(0,10,0,0.2))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1939 — 1945</div>
+        <div class="era-icon">💥</div>
+        <h3 class="era-name">World War II</h3>
+        <p class="era-desc">The sequel nobody asked for. Somehow worse than the original.</p>
+        <div class="era-wars-count">THE BIGGEST ONE</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-cold-war.html" class="era-card" data-era="1945">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Saigon-68-helicopter.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #00080a, rgba(0,8,10,0.2))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1945 — 1991</div>
+        <div class="era-icon">❄️</div>
+        <h3 class="era-name">Cold War Proxy Wars</h3>
+        <p class="era-desc">Two superpowers. Zero direct fights. Infinite countries destroyed in the crossfire.</p>
+        <div class="era-wars-count">9 Conflicts</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-post-cold-war.html" class="era-card" data-era="1991">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Siege_of_Sarajevo.png')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #0a0500, rgba(10,5,0,0.3))"></div>
+      <div class="era-card-content">
+        <div class="era-years">1991 — 2010</div>
+        <div class="era-icon">🌍</div>
+        <h3 class="era-name">Post-Cold War Conflicts</h3>
+        <p class="era-desc">The USSR collapsed. Peace didn't exactly rush in to fill the vacuum.</p>
+        <div class="era-wars-count">4 Wars</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+    <a href="pages/era-modern.html" class="era-card" data-era="2010">
+      <div class="era-card-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gaza_city_refugee_camp.jpg')"></div>
+      <div class="era-card-overlay" style="background:linear-gradient(to top, #0a0008, rgba(10,0,8,0.3))"></div>
+      <div class="era-card-content">
+        <div class="era-years">2010 — Present</div>
+        <div class="era-icon">📡</div>
+        <h3 class="era-name">Modern Conflicts</h3>
+        <p class="era-desc">Now with social media, drone strikes, and live Twitter updates</p>
+        <div class="era-wars-count">4 Ongoing</div>
+        <div class="era-arrow">→</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- HORIZONTAL TIMELINE -->
+<section id="timeline">
+  <div class="section-header">
+    <div class="section-tag">CHRONOLOGICAL VIEW</div>
+    <h2 class="section-title">The Full Timeline</h2>
+    <p class="section-sub">Drag to scroll · Click any war to read the full story</p>
+  </div>
+
+  <div class="timeline-scroll-container" id="timelineScroll">
+    <div class="timeline-track" id="timelineTrack">
+      <div class="timeline-line"></div>
+      <!-- Timeline dots will be injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- RANDOM WAR FEATURE SECTION -->
+<section id="featured-war">
+  <div class="featured-inner">
+    <div class="featured-label">FEATURED STORY</div>
+    <div class="featured-content" id="featuredContent">
+      <!-- Loaded by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE ROTATOR -->
+<section id="quotes-section">
+  <div class="quotes-bg"></div>
+  <div class="quotes-inner">
+    <div class="quote-display" id="quoteDisplay">
+      <div class="quote-mark">"</div>
+      <p class="quote-text" id="quoteText"></p>
+      <p class="quote-source" id="quoteSource"></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="pages/all-wars.html">All Wars</a>
+    <a href="#timeline">Timeline</a>
+  </div>
+  <p class="footer-credit">Built with historical accuracy, mild sarcasm, and deep respect for those who suffered.</p>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/timeline.js"></script>
+  <script src="js/imgfix.js"></script>
+</body>
+</html>

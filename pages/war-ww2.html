@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World War II — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">💥</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+  </div>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H28422%2C_Paris%2C_Adolf_Hitler_in_der_Oper.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">💥 THE SECOND WORLD WAR · 1939–1945</div>
+    <h1 class="story-title">World War II</h1>
+    <p class="story-subtitle">The sequel nobody asked for. Somehow worse than the original. Globally.</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1939–1945</strong>DURATION</div>
+      <div class="story-meta-item"><strong>All of Earth</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>70–85 Million</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Allied Victory</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">PROLOGUE</div>
+    <h2 class="chapter-title">How to Create a World War: A Recipe in Several Catastrophic Steps</h2>
+
+    <p>World War Two did not begin on <span class="date">September 1, 1939</span>. It had been building for twenty years, one terrible decision at a time. If you want to understand WW2, you have to understand WW1 — specifically, you have to understand the <span class="highlight">Treaty of Versailles</span>, which ended WW1 by humiliating Germany so thoroughly that it practically came with a twenty-year timer labeled "Next War: Insert Grievance Here."</p>
+
+    <p>Germany was forced to: accept sole blame for WW1 (the "War Guilt Clause"), pay enormous reparations it could not afford, surrender territory, drastically reduce its military, and have its economy strangled. The result was runaway inflation so severe that people burned banknotes for warmth because the wood was cheaper, followed by the Great Depression, followed by mass unemployment, followed by a population that was exhausted, humiliated, and looking for someone to blame.</p>
+
+    <p>Into this vacuum stepped a failed Austrian art student with a talent for public speaking, an extraordinary gift for identifying and exploiting resentment, and a worldview so horrifying that most people — right up until it was too late — simply refused to believe he meant it literally.</p>
+  </div>
+
+  <div class="key-figures reveal">
+    <div class="key-figures-title">⚔ THE PRINCIPAL CAST OF THIS CATASTROPHE</div>
+    <div class="figures-grid">
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H1216-0500-002%2C_Adolf_Hitler.jpg" alt="Hitler" onerror="this.style.background='#1a1a1a'"/>
+        <div class="figure-name">Adolf Hitler</div>
+        <div class="figure-role">Nazi Germany — the man most responsible for the worst thing in history</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stalin_Full_Image.jpg" alt="Stalin" onerror="this.style.background='#1a1a1a'"/>
+        <div class="figure-name">Joseph Stalin</div>
+        <div class="figure-role">Soviet Union — Allied with Hitler, then wasn't, then won</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg" alt="Churchill" onerror="this.style.background='#1a1a1a'"/>
+        <div class="figure-name">Winston Churchill</div>
+        <div class="figure-role">Britain — Refused to surrender. Extensively documented refusing to surrender.</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Franklin_Roosevelt_1945.jpg" alt="Roosevelt" onerror="this.style.background='#1a1a1a'"/>
+        <div class="figure-name">Franklin D. Roosevelt</div>
+        <div class="figure-role">USA — Stayed out, then Pearl Harbor happened</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">The Rise of Hitler: When Nobody Took the Manifesto Seriously</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-H1216-0500-002%2C_Adolf_Hitler.jpg"
+           alt="Adolf Hitler"
+           onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Adolf Hitler — failed artist, successful autocrat, architect of the 20th century's worst catastrophe</div>
+    </div>
+
+    <p><span class="person">Adolf Hitler</span> wrote <span class="highlight">Mein Kampf</span> in prison in <span class="date">1924</span>. In it, he laid out, in extensive and not-very-subtle detail, exactly what he intended to do: destroy democracy, eliminate Jewish people, conquer Eastern Europe, and create a racially "pure" German empire. The book sold millions of copies. Most people, apparently, thought it was hyperbole.</p>
+
+    <p>By <span class="date">1933</span>, Hitler was Chancellor of Germany. By 1934, he was Führer — absolute dictator. He moved with astonishing speed: the Reichstag fire gave him emergency powers; he eliminated political opponents; he began rearming Germany in violation of Versailles; and with each step, the Western democracies made a calculation: appease him and maybe he'll stop.</p>
+
+    <p>This strategy was called <span class="highlight">Appeasement</span>. Its most famous moment came in <span class="date">September 1938</span> at Munich, when Britain's Neville Chamberlain agreed to let Hitler have the Sudetenland (the German-speaking part of Czechoslovakia) in exchange for a promise of no further territorial demands. Chamberlain returned to Britain waving a piece of paper and declaring "peace for our time." Hitler got Czechoslovakia by March 1939.</p>
+
+    <div class="pull-quote">
+      "Chamberlain had a choice between war and dishonour. He chose dishonour. He will have war." — Winston Churchill, who was not wrong.
+    </div>
+  </div>
+
+  <div class="story-image-block reveal">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2-bundesarchiv-bild-183-h25224-nnormalerweise.jpg"
+         alt="German troops marching"
+         onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+    <div class="img-caption">The Wehrmacht — the most modern army in the world in 1939, built from nothing in six years</div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">Blitzkrieg: When War Became Terrifyingly Fast</h2>
+
+    <p>On <span class="date">September 1, 1939</span>, Germany invaded Poland. Britain and France, who had guaranteed Polish independence, declared war. World War Two had officially begun.</p>
+
+    <p>The German military had developed a new form of warfare: <span class="highlight">Blitzkrieg</span> — "lightning war." Instead of the slow, grinding attritional warfare of WW1, Blitzkrieg used fast-moving armored columns supported by dive bombers to punch through enemy lines, encircle defenders, and move so quickly that the enemy never had time to respond. Poland fell in 27 days. France, which had survived four years of WW1, fell in <span class="highlight">six weeks</span>.</p>
+
+    <p>The fall of <span class="place">France</span> in <span class="date">June 1940</span> was one of the most stunning military defeats in modern history. The French had more tanks than Germany. Their defences were theoretically sound. They simply couldn't respond to the pace and direction of the German attack. 330,000 British and French soldiers were evacuated from the beaches of <span class="highlight">Dunkirk</span> by a fleet of civilian boats — described at the time as a miracle, which it was, though miracles usually don't leave you in quite such desperate circumstances.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">📌 THE MIRACLE OF DUNKIRK</div>
+      <p>The evacuation of Dunkirk saved the British Expeditionary Force, but the soldiers had to abandon virtually all their equipment on the beaches — 84,000 vehicles, 2,500 guns, and 400,000 tons of supplies. Britain was left with enough weapons to equip roughly one division. Churchill called it "a colossal military disaster." He was correct. He also called it "a miracle of deliverance." He was also correct about that.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">Britain Alone, and the Battle of Britain</h2>
+
+    <p>After France fell, Britain stood essentially alone. Hitler expected Britain to negotiate — he actually admired the British Empire and had no particular desire to destroy it. <span class="person">Churchill</span>, who had replaced the disgraced Chamberlain as Prime Minister, declined to negotiate in language so memorably combative that it still makes excellent quote magnets.</p>
+
+    <p>Without a peace agreement, Hitler had to invade Britain or bomb it into submission. He chose bombing. From <span class="date">July to October 1940</span>, the German Luftwaffe and the Royal Air Force fought the Battle of Britain — the first major campaign fought entirely by air forces. British fighter pilots (average age: 20) flew multiple sorties a day against a numerically superior enemy. The RAF lost nearly 1,000 aircraft. The Luftwaffe lost nearly 2,000.</p>
+
+    <p>Hitler gave up. He turned his attention east. This was his second catastrophic strategic error, and in one sense it saved Western civilization: by invading the Soviet Union on <span class="date">June 22, 1941</span> — under Operation Barbarossa — Hitler opened a two-front war that Germany could not win.</p>
+  </div>
+
+  <div class="image-row reveal">
+    <div class="image-row-item">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Supermarine-Spitfire.jpg" alt="Spitfire" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Supermarine Spitfire — arguably the most beautiful aircraft ever built</div>
+    </div>
+    <div class="image-row-item">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/London_Blitz_-_St_Paul%27s_Cathedral.jpg" alt="London Blitz" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">St Paul's Cathedral survives the Blitz — perhaps the most famous photograph of wartime Britain</div>
+    </div>
+    <div class="image-row-item">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hurricane_mk1_r4118_fairford_arp.jpg" alt="Hurricane" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Hawker Hurricane — less glamorous than the Spitfire, but it shot down more German planes</div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">Operation Barbarossa: Hitler Invades Russia (Again, This Fails)</h2>
+
+    <p>Germany invaded the Soviet Union with <span class="highlight">3.8 million soldiers</span> — the largest invasion force in history. Initial results were staggering: entire Soviet armies were encircled and destroyed; by December 1941, German forces were within sight of Moscow.</p>
+
+    <p>Then winter arrived. Then the Soviets recovered. Then <span class="place">Stalingrad</span> happened.</p>
+
+    <p>The Battle of <span class="place">Stalingrad</span> (<span class="date">August 1942 – February 1943</span>) became the turning point of the entire war. Hitler ordered Stalingrad taken; <span class="person">Stalin</span> ordered it held at any cost. What followed was five months of the most brutal urban combat in history — fighting building by building, room by room, sometimes floor by floor. A sniper's war in the ruins of a city. German and Soviet soldiers died at a rate of approximately <span class="highlight">6,000 per day</span>.</p>
+
+    <p>In November 1942, the Soviets launched Operation Uranus — a masterpiece of encirclement that trapped the entire German 6th Army (330,000 men) inside Stalingrad. Hitler refused to let them break out. On <span class="date">February 2, 1943</span>, the remnants of the 6th Army — 91,000 men, including 24 generals — surrendered. After Stalingrad, Germany never won a major offensive on the Eastern Front again.</p>
+
+    <div class="pull-quote">
+      "At Stalingrad, the war turned. Not with a battle, but with an entire army ceasing to exist."
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FIVE</div>
+    <h2 class="chapter-title">Pearl Harbor: Japan Wakes Up America</h2>
+
+    <p>Meanwhile, in the Pacific, <span class="place">Japan</span> had been fighting its own war in <span class="place">China</span> since 1937 — a conflict of appalling brutality involving the systematic massacre of civilians and POWs. The United States had been supplying China and imposing economic sanctions on Japan. Japan's military decided the solution was to eliminate the American Pacific Fleet before it could intervene.</p>
+
+    <p>On <span class="date">December 7, 1941</span>, Japanese aircraft struck the American naval base at <span class="place">Pearl Harbor, Hawaii</span>. 2,403 Americans died. Eight battleships were sunk or damaged. It was a tactical success and a strategic catastrophe: it destroyed the American battleship fleet while leaving aircraft carriers at sea, and it united a previously divided American public absolutely against Japan.</p>
+
+    <p>America declared war on Japan. Germany, in a moment of exceptional strategic miscalculation, declared war on America in support of its Japanese ally. The industrial might of the United States — which would produce more aircraft, tanks, and ships than the rest of the world combined — entered the war. Germany and Japan had, between them, chosen to fight the world's largest economies simultaneously. The outcome, in retrospect, was not in doubt. The cost to get there was extraordinary.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER SIX</div>
+    <h2 class="chapter-title">D-Day: The Largest Seaborne Invasion in History</h2>
+
+    <p>On <span class="date">June 6, 1944</span>, the Allied forces launched Operation Overlord — the invasion of Normandy. <span class="highlight">156,000 soldiers</span> crossed the English Channel on the largest seaborne invasion force ever assembled. Five beaches. Five nations. Years of preparation. One day that changed history.</p>
+
+    <p>The losses were horrific, particularly at <span class="place">Omaha Beach</span>, where American troops faced devastating German fire and nearly 2,000 casualties. But by nightfall, the Allies had established a foothold in France. By August, Paris was liberated. By December, Germany itself was being invaded from west and east simultaneously.</p>
+
+    <div class="map-block reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Normandy_campaign_-_commencment_and_expansion.gif"
+           alt="Normandy Campaign Map"
+           onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+      <div class="map-caption">📍 The Normandy breakout — the geography of liberation</div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER SEVEN</div>
+    <h2 class="chapter-title">The Holocaust: History's Greatest Crime</h2>
+
+    <p>No story of WW2 can omit the Holocaust. The systematic murder of <span class="highlight">six million Jewish people</span> — along with Roma, disabled people, homosexuals, political opponents, and others — was not an accidental byproduct of war. It was a deliberate, industrialized genocide carried out by the Nazi state with explicit orders, detailed records, and the participation of thousands of ordinary people at every level.</p>
+
+    <p>The Nazis built a network of concentration camps, extermination camps, and mobile killing units that operated across occupied Europe. <span class="place">Auschwitz-Birkenau</span> alone killed over 1.1 million people. The victims were transported from across Europe, often believing they were being "resettled." The reality was designed to defy imagination.</p>
+
+    <p>This was not medieval barbarity. It was planned, bureaucratized, modern industrial murder — carried out by a literate, sophisticated, culturally advanced nation at the height of the 20th century. The Holocaust is studied not because it was an aberration from human nature, but because it was an expression of what human nature is capable of, under specific conditions, in a specific political environment. The conditions that created it are not unique to Germany.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">📌 REMEMBER</div>
+      <p>The Holocaust was not discovered at the war's end — it was known about in considerable detail by Allied governments as early as 1942. The decision not to prioritize its interruption (by bombing rail lines to the camps, for example) remains one of history's most contested moral failures.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER EIGHT</div>
+    <h2 class="chapter-title">The End: Atomic Bombs and a New World</h2>
+
+    <p>Germany surrendered on <span class="date">May 8, 1945</span>. Hitler had shot himself in his Berlin bunker as Soviet troops closed in. The Thousand Year Reich had lasted twelve years and left Europe in ruins.</p>
+
+    <p>Japan continued fighting. American planners estimated an invasion of Japan could cost <span class="highlight">up to a million casualties</span>. President <span class="person">Truman</span> authorized a new weapon: the atomic bomb, developed under the Manhattan Project by a team that included the greatest physicists alive. On <span class="date">August 6, 1945</span>, an atomic bomb destroyed <span class="place">Hiroshima</span>. On August 9, a second destroyed <span class="place">Nagasaki</span>. Between 130,000 and 230,000 people died, mostly civilians. Japan surrendered on <span class="date">September 2, 1945</span>.</p>
+
+    <p>The world that emerged from WW2 was fundamentally different from the one that entered it. <span class="place">Europe</span>, which had dominated the world for centuries, was in ruins and deeply in debt to America. The <span class="highlight">United States and Soviet Union</span> were now superpowers — and their relationship would define the next fifty years. The <span class="highlight">United Nations</span> was created. <span class="highlight">Israel</span> was founded. <span class="highlight">NATO</span> was formed. Nuclear weapons existed. Decolonization began.</p>
+
+    <p>And the world began the long, difficult work of trying to understand how it had happened — and how to make sure it never happened again. We are still working on that.</p>
+  </div>
+
+  <div class="prev-next-nav reveal">
+    <a href="war-spanish-civil.html" class="nav-war-btn">
+      <div class="nav-war-label">← PREVIOUS WAR</div>
+      <div class="nav-war-title">Spanish Civil War</div>
+    </a>
+    <a href="war-korean.html" class="nav-war-btn" style="text-align:right">
+      <div class="nav-war-label">NEXT WAR →</div>
+      <div class="nav-war-title">Korean War</div>
+    </a>
+  </div>
+
+</div>
+
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="all-wars.html">All Wars</a>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

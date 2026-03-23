@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Wars — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <style>
+    .all-wars-hero {
+      padding: 160px 40px 80px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
+    }
+    .filter-bar {
+      max-width: 1200px;
+      margin: 0 auto 60px;
+      padding: 0 40px;
+      display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+    }
+    .filter-btn {
+      padding: 10px 24px;
+      font-family: var(--font-heading);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border: 1px solid rgba(201,168,76,0.2);
+      background: transparent;
+      color: var(--smoke);
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+    .wars-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .war-card {
+      display: block;
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid rgba(201,168,76,0.1);
+      transition: all 0.4s ease;
+    }
+    .war-card:hover {
+      border-color: rgba(201,168,76,0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    }
+    .war-card-bg {
+      position: absolute; inset: 0;
+      background-size: cover;
+      background-position: center top;
+      filter: grayscale(30%) sepia(20%);
+      transition: transform 0.8s ease, filter 0.4s ease;
+    }
+    .war-card:hover .war-card-bg {
+      transform: scale(1.08);
+      filter: grayscale(0%) sepia(5%);
+    }
+    .war-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,8,4,0.97) 0%, rgba(10,8,4,0.5) 60%, rgba(10,8,4,0.1) 100%);
+    }
+    .war-card-content {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 24px;
+      z-index: 2;
+    }
+    .war-card-year {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+    .war-card-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--parchment);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .war-card-tagline {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--smoke);
+      font-style: italic;
+      line-height: 1.4;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .war-card:hover .war-card-tagline {
+      opacity: 1; transform: translateY(0);
+    }
+    .war-card-era {
+      position: absolute; top: 16px; right: 16px;
+      font-family: var(--font-heading);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      background: rgba(10,8,4,0.8);
+      padding: 4px 10px;
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 2px;
+      z-index: 3;
+    }
+    .war-card.hidden { display: none; }
+    @media (max-width: 600px) {
+      .wars-grid { grid-template-columns: 1fr; padding: 0 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">⚔</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../index.html#timeline" class="nav-link">Timeline</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+  </div>
+</nav>
+
+<div class="all-wars-hero">
+  <div class="section-tag">THE COMPLETE COLLECTION</div>
+  <h1 class="section-title">Every War. Every Story.</h1>
+  <p class="section-sub">30+ conflicts, 300 years of history. Pick your poison.</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">ALL ERAS</button>
+  <button class="filter-btn" data-filter="Early Modern">1700–1815</button>
+  <button class="filter-btn" data-filter="19th Century">19TH CENTURY</button>
+  <button class="filter-btn" data-filter="WW1">WW1</button>
+  <button class="filter-btn" data-filter="Interwar">INTERWAR</button>
+  <button class="filter-btn" data-filter="WW2">WW2</button>
+  <button class="filter-btn" data-filter="Cold War">COLD WAR</button>
+  <button class="filter-btn" data-filter="Post-Cold War">POST-COLD WAR</button>
+  <button class="filter-btn" data-filter="Modern">MODERN</button>
+</div>
+
+<div class="wars-grid" id="warsGrid"></div>
+
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="all-wars.html">All Wars</a>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  const grid = document.getElementById('warsGrid');
+
+  function buildGrid(filter) {
+    const wars = window.WARS_DATA || [];
+    grid.innerHTML = '';
+    const filtered = filter === 'all' ? wars : wars.filter(w => w.era === filter);
+    filtered.forEach(war => {
+      const card = document.createElement('a');
+      card.href = '../' + war.file;
+      card.className = 'war-card';
+      card.setAttribute('data-era', war.era);
+      card.innerHTML = `
+        <div class="war-card-bg" style="background-image:url('${war.image}')"></div>
+        <div class="war-card-overlay"></div>
+        <div class="war-card-era">${war.era}</div>
+        <div class="war-card-content">
+          <div class="war-card-year">${war.year}</div>
+          <div class="war-card-name">${war.name}</div>
+          <div class="war-card-tagline">${war.tagline}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  buildGrid('all');
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      buildGrid(btn.dataset.filter);
+    });
+  });
+</script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

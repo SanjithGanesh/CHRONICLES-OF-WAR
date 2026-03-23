@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The American Civil War — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">⚔</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-19th-century.html" class="nav-link">19th Century</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Battle%20of%20Gettysburg%20by%20Thure%20de%20Thulstrup.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">🇺🇸 19TH CENTURY · 1861–1865</div>
+    <h1 class="story-title">The American Civil War</h1>
+    <p class="story-subtitle">America split itself in half over slavery, then spent four years and 620,000 lives deciding whether to stay split</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1861–1865</strong>DURATION</div>
+      <div class="story-meta-item"><strong>United States</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~620,000</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Union Preserved</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">The Contradiction at the Heart of America</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_Lincoln_O-77_matte_collodion_print.jpg" alt="Abraham Lincoln" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Abraham Lincoln — 16th President, self-educated lawyer, and the man who preserved the Union at the cost of everything else</div>
+    </div>
+    <p>The United States was founded on the principle that all men are created equal, by men who owned slaves. This was not a contradiction that could be papered over forever. For eighty years, American politics consisted largely of finding increasingly elaborate ways to avoid confronting it.</p>
+    <p>The South's economy was built on enslaved labor — 4 million people kept in bondage. The North was industrializing and didn't need slavery economically. When <span class="person">Abraham Lincoln</span> was elected in <span class="date">1860</span> on a platform of preventing slavery's expansion into new territories, seven Southern states seceded before he was even inaugurated. They formed the <span class="highlight">Confederate States of America</span>, wrote a constitution that explicitly protected slavery, and elected <span class="person">Jefferson Davis</span> as president.</p>
+    <p>On <span class="date">April 12, 1861</span>, Confederate forces opened fire on <span class="place">Fort Sumter</span> in South Carolina. The war had begun. Both sides thought it would be quick. Both sides were spectacularly wrong.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">📜 HISTORICAL NOTE</div>
+      <p>Confederate Vice President Alexander Stephens gave a speech in 1861 explicitly stating that slavery was the "cornerstone" of the Confederate government and its "proper status in the world." There has been considerable debate since about what the war was "really about." There was not much debate in 1861.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The Generals: Brilliance on Both Sides</h2>
+    <div class="story-image-row">
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulysses_S._Grant_by_Ole_Peter_Hansen_Balling.jpg" alt="Ulysses Grant" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Ulysses S. Grant — Union general, later president, known for the simple strategy of "keep attacking until they run out of soldiers"</div>
+      </div>
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Edward_Lee.jpg" alt="Robert E. Lee" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Robert E. Lee — Confederate general and tactical genius who turned down command of Union forces to fight for Virginia. History has mixed feelings about celebrating him.</div>
+      </div>
+    </div>
+    <p>The South had a significant advantage in generalship early in the war. <span class="person">Robert E. Lee</span> was arguably the finest military mind of the era — his Army of Northern Virginia repeatedly defeated Union forces far larger than his own, operating in Virginia and Maryland with brilliant tactical creativity.</p>
+    <p>The Union struggled to find generals willing to fight aggressively. Then came <span class="person">Ulysses S. Grant</span> — a man whose pre-war career had been a string of failures and who had no flashy tactical brilliance, but who understood something Lee didn't: the North could replace its losses. The South couldn't. Grant's strategy was sustained, grinding, relentless pressure on multiple fronts simultaneously. It wasn't elegant. It worked.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">Gettysburg: Three Days That Decided Everything</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle%20of%20Gettysburg%20by%20Thure%20de%20Thulstrup.jpg" alt="Battle of Gettysburg" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Battle of Gettysburg, July 1-3, 1863 — 50,000 casualties in three days. The high-water mark of the Confederacy.</div>
+    </div>
+    <p>In <span class="date">July 1863</span>, Lee invaded the North for the second time, pushing into Pennsylvania. The armies met at <span class="place">Gettysburg</span> almost by accident — Confederate troops looking for shoes wandered into Union cavalry. Over three days, in brutal fighting across Cemetery Ridge, Little Round Top, and the Peach Orchard, Lee was repulsed.</p>
+    <p>On the final day, <span class="person">General George Pickett</span> led 12,500 Confederate soldiers in a frontal assault across an open field against entrenched Union positions. <span class="highlight">Pickett's Charge</span> was met with devastating fire. Half of them were killed or wounded within an hour. Lee, watching from his lines, rode out to meet the survivors and told them it was all his fault. It probably was.</p>
+    <p>The same day, Grant captured <span class="place">Vicksburg</span>, giving the Union control of the entire Mississippi River. Two battles, same day, same outcome: the Confederacy was now losing on every front. Lincoln gave his <span class="highlight">Gettysburg Address</span> at the dedication of the cemetery there in November. It is 272 words long. It is still memorized by American schoolchildren 160 years later.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">Appomattox and the Long Aftermath</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Appomattox_courthouse.jpg" alt="Appomattox Court House" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Appomattox Court House, April 9, 1865 — where Lee surrendered to Grant. Grant let Confederate officers keep their horses. He was trying to make peace, not score points.</div>
+    </div>
+    <p>By <span class="date">April 1865</span>, the Confederacy was collapsing. Grant's army had siege of Richmond for months. When the lines broke, Confederate President <span class="person">Jefferson Davis</span> fled south. Lee was surrounded. On <span class="date">April 9, 1865</span>, Lee met Grant at <span class="highlight">Appomattox Court House</span> and surrendered.</p>
+    <p>Five days later, <span class="person">Abraham Lincoln</span> was shot in the back of the head at Ford's Theatre by <span class="person">John Wilkes Booth</span>, a Confederate sympathizer. Lincoln died the next morning. His vice president, <span class="person">Andrew Johnson</span>, would oversee Reconstruction — and prove far less committed to ensuring former enslaved people gained actual rights.</p>
+
+    <div class="story-pull-quote">
+      <blockquote>"Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."</blockquote>
+      <cite>— Abraham Lincoln, Gettysburg Address, November 1863.</cite>
+    </div>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🔗 WHY IT MATTERS</div>
+      <p>The Civil War killed more Americans than any other conflict in history — more than both World Wars combined. It ended slavery through the 13th Amendment. But Reconstruction was undermined and the South found legal ways to enforce racial hierarchy through Jim Crow laws for another century. The war settled whether the country would stay united. The questions about equality it raised are still being answered.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="story-nav-bar">
+  <a href="war-crimean.html" class="story-nav-prev">← Crimean War</a>
+  <a href="war-opium.html" class="story-nav-next">Opium Wars →</a>
+</div>
+
+<footer class="main-footer"><div class="footer-inner"><div class="footer-logo">⚔ CHRONICLES OF WAR</div><p class="footer-copy">© 2024 Chronicles of War</p></div></footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

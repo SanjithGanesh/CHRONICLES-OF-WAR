@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Interwar Era — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/landing.css" />
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">☭</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-interwar.html" class="nav-link active">Interwar</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero" style="height:55vh;">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Milicianas.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">☭ 1917–1939</div>
+    <h1 class="story-title" style="font-size:clamp(2rem,5vw,4rem);">The Interwar Era</h1>
+    <p class="story-subtitle">Between two world wars, revolutions swept empires, ideologies clashed, and the world rehearsed the conflict to come</p>
+  </div>
+</section>
+
+<section style="padding:60px 40px;max-width:1200px;margin:0 auto;">
+  <div class="section-header reveal" style="text-align:center;margin-bottom:60px;">
+    <div style="font-family:'Special Elite',cursive;color:var(--gold);letter-spacing:4px;font-size:0.85rem;margin-bottom:12px;">REVOLUTION, CIVIL WAR, AND FASCISM'S RISE</div>
+    <h2 style="font-family:'Cinzel Decorative',serif;font-size:clamp(1.5rem,3vw,2.5rem);color:var(--parchment);">Five Conflicts Between the World Wars</h2>
+    <p style="color:rgba(242,232,208,0.7);max-width:600px;margin:20px auto;font-family:'Crimson Pro',serif;font-size:1.1rem;">The interwar years weren't peaceful — they were an extended catastrophe: revolutions, famines, civil wars, and the slow march toward a second world war.</p>
+  </div>
+
+  <div class="era-cards-grid">
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Lenin_Cheka.jpg')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1917 · RUSSIA</div>
+        <h3 class="era-card-title">Russian Revolution</h3>
+        <p class="era-card-excerpt">Tsar Nicholas II: the last man to underestimate a cold, hungry, radicalized population.</p>
+        <a href="war-russian-revolution.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Romanov_family_1913.jpg')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1917–1922 · RUSSIA</div>
+        <h3 class="era-card-title">Russian Civil War</h3>
+        <p class="era-card-excerpt">Red vs. White — a sequel nobody wanted, fought across a continent. It created the Soviet Union.</p>
+        <a href="war-russian-civil.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Milicianas.jpg')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1936–1939 · SPAIN</div>
+        <h3 class="era-card-title">Spanish Civil War</h3>
+        <p class="era-card-excerpt">WW2's dress rehearsal — fascism, communism, and democracy slugged it out while the world watched and failed to intervene.</p>
+        <a href="war-spanish-civil.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.jpg')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1927–1949 · CHINA</div>
+        <h3 class="era-card-title">Chinese Civil War</h3>
+        <p class="era-card-excerpt">Mao vs. Chiang: two decades, a World War in the middle, and the birth of modern China and Taiwan.</p>
+        <a href="war-chinese-civil.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="text-align:center;margin-top:60px;">
+    <a href="all-wars.html" style="font-family:'Cinzel',serif;color:var(--gold);border:1px solid var(--gold);padding:14px 32px;letter-spacing:3px;font-size:0.85rem;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--void)'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">VIEW ALL ERAS →</a>
+  </div>
+</section>
+
+<footer class="main-footer"><div class="footer-inner"><div class="footer-logo">⚔ CHRONICLES OF WAR</div><p class="footer-copy">© 2024 Chronicles of War</p></div></footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

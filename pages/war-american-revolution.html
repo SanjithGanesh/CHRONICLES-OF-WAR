@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>American Revolutionary War — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">🦅</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-early-modern.html" class="nav-link">Early Modern</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">🦅 EARLY MODERN ERA · 1775–1783</div>
+    <h1 class="story-title">The American Revolutionary War</h1>
+    <p class="story-subtitle">Britain's most expensive tea-related argument — and how a ragtag colonial army defeated the world's greatest empire</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1775–1783</strong>DURATION</div>
+      <div class="story-meta-item"><strong>North America</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~50,000</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>USA Created</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">No Taxation Without Representation (And Without Tea)</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg" alt="Signing of the Constitution" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Constitutional Convention — the founding fathers looking extremely serious about their paperwork</div>
+    </div>
+
+    <p>Let's begin with a basic fact: in <span class="date">1763</span>, Britain had just won the Seven Years' War and was absolutely broke. Somebody had to pay for it. <span class="person">King George III</span> and his Parliament looked at their profitable American colonies and thought: <em>obviously them.</em></p>
+    <p>The colonists had other opinions. They'd been largely self-governing for over a century. They paid local taxes to local assemblies. They had no seats in the British Parliament. When Britain started imposing new taxes — the <span class="highlight">Stamp Act</span>, the <span class="highlight">Townshend Acts</span>, the <span class="highlight">Tea Act</span> — the colonists didn't just grumble. They organized, boycotted, protested, and eventually, in <span class="date">December 1773</span>, dressed as Mohawk Indians and threw an entire shipment of British tea into Boston Harbor.</p>
+    <p>This event — the <span class="highlight">Boston Tea Party</span> — is presented in American history as a noble act of resistance. The British viewed it as vandalism and theft committed by men in terrible costumes. Parliament responded by passing the <span class="highlight">Coercive Acts</span> (called the "Intolerable Acts" by colonists), which essentially put Boston under military occupation. The colonists were not soothed by this approach.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">☕ FUN FACT</div>
+      <p>The Boston Tea Party destroyed 342 chests of tea worth about £10,000 — roughly £1.7 million in today's money. Americans are still proud of this. Britain is still somewhat baffled by the enthusiasm. To this day, Americans prefer coffee, which is arguably the longest-lasting consequence of the whole affair.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The Shot Heard Round the World</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minuteman_Statue%2C_Lexington%2C_MA.jpg" alt="Lexington Minuteman statue" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Lexington Minuteman — armed farmers who decided to fight the world's most powerful military. Confidence is everything.</div>
+    </div>
+
+    <p>On <span class="date">April 19, 1775</span>, British troops marched from Boston toward Concord to seize colonial weapons. They were met at <span class="place">Lexington</span> by a small group of colonial militia. Someone fired a shot. No one agrees who. Both sides claimed the other did it. This is a pattern that repeats throughout all of human history.</p>
+    <p>The British won at Lexington, pushed to Concord, couldn't find the weapons (they'd been moved), and started marching back to Boston. Then things went badly wrong. Thousands of colonial militia lined the road home, firing from behind stone walls and trees. The British, trained for open-field European warfare, were completely unprepared for this kind of fighting. By the time they reached Boston, they had nearly 300 casualties.</p>
+    <p>The war had begun. Nobody was quite sure who started it, what exactly they were fighting for, or how it would end. This, as it turns out, describes the beginning of most wars.</p>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg" alt="Washington Crossing the Delaware" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Washington crossing the Delaware on Christmas Night, 1776 — a moment of genuine desperation painted to look dignified</div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">George Washington: The Man Who Refused to Quit</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" alt="George Washington" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">George Washington — didn't actually chop down a cherry tree, didn't actually have wooden teeth, definitely was an extraordinary military leader</div>
+    </div>
+
+    <p><span class="person">George Washington</span> was chosen as Commander-in-Chief of the Continental Army in <span class="date">1775</span>. His main qualification was that he was tall, looked imposing on a horse, and was from Virginia — which the New England colonies needed politically. His military record from the Seven Years' War was, generously, mixed.</p>
+    <p>Washington's genius wasn't tactical brilliance. It was the ability to <span class="highlight">keep an army together when everything was falling apart</span>. He lost more battles than he won. His troops were often starving, unpaid, shoeless, and deserting. He retreated constantly across New Jersey in <span class="date">1776</span>, chased by a British army, with the colonial cause collapsing around him.</p>
+    <p>Then, on <span class="highlight">Christmas Night, 1776</span>, he crossed the ice-choked Delaware River in darkness, marched nine miles through a blizzard, and attacked the Hessian garrison at Trenton before dawn. The Hessians (German mercenaries employed by Britain) were caught completely unprepared. Washington's men captured 900 of them, losing zero men in the attack. The momentum shifted. The war wasn't over — but suddenly, it was possible.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🎖️ WASHINGTON FACT</div>
+      <p>Washington had horses shot out from under him multiple times and came through battles unscathed while men around him were killed. He later wrote that he felt genuinely protected by Providence. Whether or not you believe that, the statistics are remarkable. He simply didn't die when ordinary men would have.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">France Joins In (For All the Wrong Reasons)</h2>
+
+    <div class="story-image-row">
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lafayette_Gu%C3%A9rin.jpg" alt="Marquis de Lafayette" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Marquis de Lafayette — French aristocrat who came to fight for liberty, then went home and tried to apply the same ideas to France with considerably messier results</div>
+      </div>
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin_Franklin_by_Jean-Baptiste_Greuze.jpg" alt="Benjamin Franklin in Paris" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Benjamin Franklin in Paris — charmed the entire French court into funding the American Revolution. His greatest diplomatic achievement.</div>
+      </div>
+    </div>
+
+    <p>The turning point of the war came in <span class="date">1777</span> when the colonials won the <span class="highlight">Battle of Saratoga</span> — a genuine, significant military victory that proved the Continental Army could fight and win. This convinced <span class="person">France</span> to formally ally with the Americans.</p>
+    <p>France's motivations were not idealistic. They were furious about losing the Seven Years' War and wanted revenge on Britain. The American Revolution was a convenient vehicle. <span class="person">Benjamin Franklin</span> had been in Paris brilliantly charming French aristocrats while carefully not mentioning that the American cause was, up to that point, losing quite badly.</p>
+    <p>France's entry changed everything. Suddenly Britain wasn't just fighting colonial farmers — it was fighting France, Spain (which joined in 1779), and the Netherlands (1780). The Royal Navy, previously dominant, was being stretched thin. British strategy collapsed. The war that had seemed like colonial suppression became a global conflict, and Britain found itself on the losing end.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FIVE</div>
+    <h2 class="chapter-title">Yorktown: The British Surrender</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Surrender_of_Lord_Cornwallis.jpg" alt="Surrender of Lord Cornwallis at Yorktown" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Surrender at Yorktown — Lord Cornwallis claimed to be ill and sent a subordinate to hand over his sword. A diplomatic illness at a diplomatically convenient moment.</div>
+    </div>
+
+    <p>In <span class="date">October 1781</span>, British General <span class="person">Lord Cornwallis</span> found himself trapped at <span class="place">Yorktown, Virginia</span>, with Washington's army on land and a French fleet blocking the sea. He was outnumbered, outmaneuvered, and out of options.</p>
+    <p>On <span class="highlight">October 19, 1781</span>, the British army surrendered. The band reportedly played a tune called "The World Turned Upside Down." Cornwallis himself didn't attend — he claimed to be ill. His subordinate handed over his sword to an American subordinate, because Washington had sent a subordinate too, presumably to balance the awkwardness.</p>
+    <p>The war dragged on diplomatically for two more years, but the fighting was essentially over. The <span class="highlight">Treaty of Paris (1783)</span> recognized American independence. Britain ceded everything east of the Mississippi to the United States. After eight years of war, the colonies had won. The most powerful empire on Earth had lost to a collection of farmers, merchants, and idealists who refused to stop fighting.</p>
+
+    <div class="key-figures">
+      <h3 class="key-figures-title">Key Players</h3>
+      <div class="figures-grid">
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" alt="George Washington" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">George Washington</div>
+          <div class="figure-role">Commander-in-Chief — The man who simply refused to lose</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BenFranklinDuplessis.jpg" alt="Benjamin Franklin" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Benjamin Franklin</div>
+          <div class="figure-role">Diplomat — Won the French alliance with charm and guile</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/King_George_III_by_Johann_Zoffany.jpg" alt="King George III" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">King George III</div>
+          <div class="figure-role">Britain — Lost America, later lost his mind</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lafayette_Gu%C3%A9rin.jpg" alt="Lafayette" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Marquis de Lafayette</div>
+          <div class="figure-role">France — Hero of two revolutions, both of which got complicated</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-pull-quote">
+      <blockquote>"We hold these truths to be self-evident, that all men are created equal."</blockquote>
+      <cite>— Thomas Jefferson, Declaration of Independence, 1776. He owned slaves while writing this. America has been processing the contradiction ever since.</cite>
+    </div>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🔗 WHY IT MATTERS</div>
+      <p>The American Revolution created the first modern democratic republic and proved that colonies could successfully break from European empires. It directly inspired the French Revolution (1789), which inspired revolutions across Latin America and Europe. The debt France incurred helping America also contributed to the financial crisis that sparked the French Revolution. Revolutions, it turns out, are contagious.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="story-nav-bar">
+  <a href="war-seven-years.html" class="story-nav-prev">← Seven Years' War</a>
+  <a href="war-french-revolution.html" class="story-nav-next">French Revolution →</a>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">⚔ CHRONICLES OF WAR</div>
+    <p class="footer-text">History is the greatest story ever told. We just add context — and occasional sarcasm.</p>
+    <p class="footer-copy">© 2024 Chronicles of War</p>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

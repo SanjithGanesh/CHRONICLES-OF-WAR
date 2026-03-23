@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World War I — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">💣</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Home</a><a href="all-wars.html" class="nav-link">All Wars</a></div>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">💣 THE GREAT WAR · 1914–1918</div>
+    <h1 class="story-title">World War I</h1>
+    <p class="story-subtitle">One assassination. One alliance system. Four years. Thirty-seven million casualties. A war nobody wanted and nobody could stop.</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1914–1918</strong>DURATION</div>
+      <div class="story-meta-item"><strong>Europe & Beyond</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~37 Million</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Allied Victory</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">PROLOGUE</div>
+    <h2 class="chapter-title">Europe, 1914: A Continent Sitting on a Powder Keg</h2>
+    <p>To understand how a single assassination in <span class="place">Sarajevo</span> started a world war, you need to understand what Europe looked like in <span class="date">1914</span>: a continent of great powers wrapped in a web of alliances so complex that if anyone pulled one thread, the entire thing would unravel into catastrophe.</p>
+    <p>On one side: the <span class="highlight">Triple Alliance</span> — Germany, Austria-Hungary, and Italy. On the other: the <span class="highlight">Triple Entente</span> — France, Russia, and Britain. These alliances existed precisely to prevent war through mutual deterrence. They accomplished the opposite — they ensured that any conflict between two countries would automatically become a conflict between all of them.</p>
+    <p>Add to this: <span class="highlight">an arms race</span> (Germany and Britain were competing to build the world's largest navies), <span class="highlight">rising nationalism</span> (the Austro-Hungarian and Ottoman Empires were multiethnic constructions that millions of people wanted to escape), and generals across Europe who privately believed that a short, decisive war might actually be quite good for morale. Everyone was ready. Nobody had an exit plan.</p>
+    <div class="fun-fact"><div class="fun-fact-label">⚡ THE TINDERBOX</div><p>Germany had a war plan — the Schlieffen Plan — that required invading France through Belgium immediately upon the outbreak of any war with Russia, because fighting on two fronts simultaneously was considered impossible. This meant that the moment Germany declared war on Russia, it had to also attack France and Belgium. There was no way to fight on just one front. The plan turned every crisis into a potential world war.</p></div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">The Shot That Broke the World</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gavrilo_Princip_1914.jpg" alt="Gavrilo Princip" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Gavrilo Princip — 19 years old, eating a sandwich, accidentally starting a World War</div>
+    </div>
+    <p>On <span class="date">June 28, 1914</span>, Archduke <span class="person">Franz Ferdinand</span> — heir to the Austro-Hungarian throne — arrived in <span class="place">Sarajevo</span> for an official visit. A group of six conspirators from the Black Hand (a Serbian nationalist organization) had positioned themselves along his route.</p>
+    <p>The first assassination attempt failed — a bomb was thrown at the Archduke's car, bounced off, and exploded under the following vehicle. Franz Ferdinand continued to the town hall, gave his speech, then announced he wanted to visit the injured from the bomb explosion. His driver took a wrong turn, realized the mistake, and stopped to reverse — directly in front of <span class="person">Gavrilo Princip</span>, one of the conspirators, who had given up on the mission and was eating in a nearby deli.</p>
+    <p>Princip fired twice. <span class="person">Franz Ferdinand</span> and his wife <span class="person">Sophie</span> were both fatally wounded. Princip was 19 years old. He was too young to be executed under Austro-Hungarian law. He died of tuberculosis in prison in 1918, just before the war he triggered ended. He apparently never fully understood the consequences of what he had done.</p>
+  </div>
+
+  <div class="story-image-block reveal">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg" alt="Europe 1914 Alliances" onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+    <div class="img-caption">📍 Europe's alliance system in 1914 — the web that turned one assassination into a world war</div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The Domino Collapse of July 1914</h2>
+    <p><span class="place">Austria-Hungary</span> blamed Serbia for the assassination and issued an ultimatum so deliberately extreme that it was designed to be rejected. Serbia accepted most of it. Austria declared war anyway. Russia, which had promised to protect Serbia, began mobilizing. Germany, bound to Austria and needing to execute the Schlieffen Plan, declared war on Russia and then France. Germany invaded Belgium. Britain, which had guaranteed Belgian neutrality in an 1839 treaty, declared war on Germany.</p>
+    <p>In <span class="highlight">five weeks</span>, a regional dispute became a world war. The diplomats worked desperately to find an off-ramp. Military timetables, which required mobilization orders to be given weeks in advance, made diplomacy almost impossible. One by one, the dominoes fell. By <span class="date">August 4, 1914</span>, every major European power was at war.</p>
+    <div class="pull-quote">"The lamps are going out all over Europe; we shall not see them lit again in our lifetime." — British Foreign Secretary Sir Edward Grey, August 3, 1914. He was right about that.</div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">The Western Front: Hell in the Mud</h2>
+    <p>Germany swept through Belgium and into France, almost reaching <span class="place">Paris</span> before being stopped at the First Battle of the Marne. Both sides dug trenches. The trenches stretched from the English Channel to the Swiss Alps. And then, for four years, almost nobody moved.</p>
+    <p>Life in the trenches was a sustained exercise in misery. Soldiers lived in narrow ditches of mud, constantly shelled, surrounded by rats and the unburied dead. Trench foot — caused by standing for days in cold water — was endemic. "Shell shock" (what we'd now call PTSD) was treated as cowardice. Men went over the top into machine gun fire. The same ground was fought over, lost, retaken, and lost again, measured in hundreds of meters and hundreds of thousands of lives.</p>
+    <div class="image-row reveal">
+      <div class="image-row-item">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg" alt="WW1 trench" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">British soldiers in a Somme trench, 1916</div>
+      </div>
+      <div class="image-row-item">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916_%282%29.jpg" alt="WW1 soldiers" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">The reality of trench warfare — months in the mud</div>
+      </div>
+      <div class="image-row-item">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ruins-of-Ypres-1915.jpg" alt="Ypres ruins" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Ypres, Belgium — fought over three times, flattened each time</div>
+      </div>
+    </div>
+    <p>The <span class="highlight">Battle of the Somme</span> (July–November 1916): on the first day alone, the British Army suffered 57,470 casualties — nearly 20,000 dead. The offensive gained roughly ten kilometers over four months. The <span class="highlight">Battle of Verdun</span> (February–December 1916): ten months of fighting, an estimated 700,000 casualties, to gain and lose approximately nothing. Germany invented poison gas. Both sides used it. The war invented new ways to kill people faster than anyone could process the moral implications.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">The End: Exhaustion, Revolution, and a Very Bad Treaty</h2>
+    <p>By <span class="date">1917</span>, the war was producing revolutions. <span class="place">Russia</span> collapsed into two revolutions and pulled out of the war. <span class="place">France</span> experienced widespread mutinies after the catastrophic Nivelle Offensive. The <span class="person">United States</span> — provoked by German submarine warfare and a German attempt to encourage Mexico to attack America — entered the war in April 1917, bringing fresh troops and industrial capacity to the Allied side.</p>
+    <p>Germany launched its final great offensive in Spring 1918 and almost won — breaking through Allied lines and advancing to within 100km of Paris. Then the offensive stalled, Allied counterattacks began, the German Army began disintegrating, revolution broke out in Germany itself, and the Kaiser abdicated. On <span class="date">November 11, 1918</span>, at 11am, the armistice came into effect. The guns stopped. Soldiers on both sides wept.</p>
+    <p>The <span class="highlight">Paris Peace Conference</span> produced the Treaty of Versailles. Germany was forced to accept sole war guilt, pay enormous reparations, surrender territories and colonies, and radically disarm. The terms were economically ruinous and psychologically humiliating. <span class="person">John Maynard Keynes</span>, the economist, walked out of the conference in disgust and published <em>The Economic Consequences of the Peace</em> — predicting the treaty would cause another war within a generation. He was correct. The next war began twenty years later.</p>
+  </div>
+
+  <div class="prev-next-nav reveal">
+    <a href="war-franco-prussian.html" class="nav-war-btn">
+      <div class="nav-war-label">← PREVIOUS WAR</div>
+      <div class="nav-war-title">Franco-Prussian War</div>
+    </a>
+    <a href="war-russian-revolution.html" class="nav-war-btn" style="text-align:right">
+      <div class="nav-war-label">NEXT WAR →</div>
+      <div class="nav-war-title">Russian Revolution</div>
+    </a>
+  </div>
+</div>
+
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links"><a href="../index.html">Home</a><a href="all-wars.html">All Wars</a></div>
+</footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Seven Years' War — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">🌍</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-early-modern.html" class="nav-link">Early Modern</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Kunersdorf_by_Alexander_Kotzebue.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">🌍 EARLY MODERN ERA · 1756–1763</div>
+    <h1 class="story-title">The Seven Years' War</h1>
+    <p class="story-subtitle">The world's first actual world war — fought across five continents before anyone even thought to name it properly</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1756–1763</strong>DURATION</div>
+      <div class="story-meta-item"><strong>5 Continents</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~1.4 Million</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Britain Dominates</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">PROLOGUE</div>
+    <h2 class="chapter-title">Before There Were World Wars, There Was This</h2>
+    <p>Most people, when they think of "World Wars," think of <span class="date">1914</span> or <span class="date">1939</span>. They picture trenches, tanks, and people wearing helmets. They do not picture men in powdered wigs fighting on four separate continents simultaneously over who gets to be the most powerful country on Earth.</p>
+    <p>Which is a shame, because that is exactly what the <span class="highlight">Seven Years' War</span> was — and it was genuinely the first conflict in history to involve major military operations on multiple continents at the same time. Winston Churchill called it "the first world war." Historians largely agree. It just happened to occur about 150 years too early for anyone to name it dramatically.</p>
+    <div class="fun-fact">
+      <div class="fun-fact-label">🌍 THE SCALE</div>
+      <p>The Seven Years' War was fought in Europe, North America, South America, West Africa, India, and the Philippines. It involved Britain, France, Prussia, Austria, Russia, Spain, Portugal, and basically anyone else with a flag and a grievance. For context: most wars have two sides. This one had everyone.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">The Diplomatic Revolution: Everyone Switches Sides</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich_Zweite_Alt.jpg" alt="Frederick the Great of Prussia" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Frederick the Great of Prussia — brilliant general, terrible neighbor, deeply unpleasant person</div>
+    </div>
+
+    <p>The war started because of something historians actually call the <span class="highlight">"Diplomatic Revolution of 1756"</span> — which sounds dry but was, in practice, absolutely chaotic. Europe's great powers suddenly switched their alliances around in ways that confused everyone, including their own diplomats.</p>
+    <p>Here's how it worked: <span class="person">Austria</span> and <span class="person">France</span> had been enemies for centuries. <span class="person">Britain</span> and <span class="person">Prussia</span> had been friendly. Then, in 1756, <em>everyone swapped</em>. Austria allied with France. Britain allied with Prussia. The result was two enormous blocs staring at each other across Europe while simultaneously fighting each other's colonies across the entire globe.</p>
+    <p>At the center of this storm stood <span class="person">Frederick II of Prussia</span> — known to history as <span class="highlight">Frederick the Great</span>, known to his enemies as "that infuriating little kingdom that won't stop winning." Frederick was surrounded on all sides by Austria, France, Russia, Sweden, and Saxony. He had Prussia, some excellent generals, and what appeared to be suicidal confidence. Somehow, he survived.</p>
+
+    <div class="story-image-row">
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maria_Theresa_of_Austria.jpg" alt="Empress Maria Theresa" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Empress Maria Theresa — wanted Silesia back badly enough to rearrange all of European diplomacy</div>
+      </div>
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XV_of_France.jpg" alt="Louis XV of France" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Louis XV of France — allied with Austria, then lost most of his empire anyway</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The American Front: Where Britain Really Won</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Quebec_1759.jpg" alt="Battle of Quebec 1759" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Plains of Abraham, Quebec, 1759 — where French Canada effectively ended in about 15 minutes</div>
+    </div>
+
+    <p>In North America, this war was called the <span class="highlight">French and Indian War</span>, which Americans know far better than the Seven Years' War because they name conflicts after who they fought rather than how long they lasted. Here, <span class="person">Britain</span> and <span class="person">France</span> were fighting over who would control the vast interior of the continent.</p>
+    <p>France had a significant advantage at first — they'd built a network of forts and allied with many Native American nations. Then Britain sent massive reinforcements, installed <span class="person">William Pitt the Elder</span> as war minister, and started spending money like it was going out of fashion. The turning point came in <span class="date">1759</span>, the "Year of Victories," when Britain won at Quebec, at Lagos, at Minden, and in India — all within months. The French were getting absolutely battered on every front simultaneously.</p>
+    <p>The <span class="highlight">Battle of the Plains of Abraham</span> outside Quebec lasted approximately fifteen minutes, but its consequences lasted centuries. Both commanding generals — <span class="person">Wolfe</span> for Britain, <span class="person">Montcalm</span> for France — were killed. Britain won. French Canada, after 150 years of French rule, became British. French Canadians are still a little annoyed about this.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🦅 FUN FACT</div>
+      <p>A young officer named <span class="person">George Washington</span> fought in the early stages of this war as a British colonial officer — and performed so badly in his first military engagement that he accidentally started an international incident. He would later lead a revolution against Britain. Which is awkward.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">India and Africa: The Colonial Jackpot</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Clive.jpg" alt="Robert Clive" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Robert Clive — East India Company employee who accidentally conquered India. This is considered normal behaviour in the 18th century.</div>
+    </div>
+
+    <p>Meanwhile, in <span class="place">India</span>, another titanic struggle was taking place. The <span class="highlight">British East India Company</span> — technically a trading company, practically a private army with stockholders — was fighting the French East India Company for control of the subcontinent. Both sides allied with local rulers, bribed generals, and behaved in ways that were technically legal but profoundly questionable.</p>
+    <p><span class="person">Robert Clive</span> — a clerk-turned-general with extremely flexible ethics — won the decisive <span class="highlight">Battle of Plassey in 1757</span> through a combination of military skill and outright bribery of the enemy commander. This single battle effectively handed Britain the foundation of what would become its Indian empire. Clive was made very rich. The Bengali people were not consulted.</p>
+    <p>In West Africa, Britain captured French slave-trading posts. In the Caribbean, Britain took French islands. The pattern was consistent: France won in Europe occasionally, lost almost everywhere else.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">Prussia Survives (Barely)</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Kunersdorf_by_Alexander_Kotzebue.jpg" alt="Battle of Kunersdorf" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Battle of Kunersdorf, 1759 — Prussia's worst defeat. Frederick wrote his own obituary after this one.</div>
+    </div>
+
+    <p>Back in Europe, <span class="person">Frederick of Prussia</span> was fighting for his life — sometimes literally. In <span class="date">1759</span>, his army was shattered at the <span class="highlight">Battle of Kunersdorf</span>. He wrote letters suggesting Prussia was finished. He reportedly considered suicide. Vienna prepared celebrations.</p>
+    <p>Then something extraordinary happened: Empress <span class="person">Elizabeth of Russia</span> died in <span class="date">1762</span>. Her successor, Peter III, was a colossal admirer of Frederick the Great — so instead of delivering the killing blow to Prussia, Russia switched sides and returned all conquered territory. Historians call this the <span class="highlight">"Miracle of the House of Brandenburg."</span> Frederick called it the luckiest moment of his life. Russia immediately replaced Peter III with his wife, Catherine — who would become Catherine the Great — but kept the peace.</p>
+    <p>Prussia survived. Frederick went on to rule for another two decades. Austria never got Silesia back. Everyone was exhausted.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">EPILOGUE</div>
+    <h2 class="chapter-title">The Treaty of Paris (1763): Britain Wins Everything</h2>
+    <p>When the shooting stopped, the <span class="highlight">Treaty of Paris (1763)</span> redrew the world. France handed over Canada to Britain, most of its Indian territories, and various Caribbean and African possessions. Spain, which had joined France late and badly, gave up Florida. Britain emerged as the dominant global power — in control of North America east of the Mississippi, India, and much of the global trade network.</p>
+    <p>The losers were also notable: France lost its empire and accumulated enormous debt trying. Spain lost territory. Most significantly, <span class="highlight">Native American nations</span> across North America lost French allies who had helped balance British expansion — and within a generation, British colonists were pouring across the Appalachians with predictable consequences.</p>
+
+    <div class="key-figures">
+      <h3 class="key-figures-title">Key Players</h3>
+      <div class="figures-grid">
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich_Zweite_Alt.jpg" alt="Frederick the Great" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Frederick the Great</div>
+          <div class="figure-role">King of Prussia — Survived against all odds</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maria_Theresa_of_Austria.jpg" alt="Maria Theresa" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Empress Maria Theresa</div>
+          <div class="figure-role">Austria — The woman who started it all wanting Silesia back</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Clive.jpg" alt="Robert Clive" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Robert Clive</div>
+          <div class="figure-role">East India Company — Won India for Britain through bribery</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XV_of_France.jpg" alt="Louis XV" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Louis XV</div>
+          <div class="figure-role">France — Lost Canada, India, and his empire's savings</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-pull-quote">
+      <blockquote>"A few acres of snow."</blockquote>
+      <cite>— Voltaire, dismissing Canada as not worth fighting over. He was spectacularly wrong about this.</cite>
+    </div>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🔗 WHY IT MATTERS</div>
+      <p>The Seven Years' War's debt forced Britain to tax its American colonies — sparking the resentments that led to the American Revolution thirteen years later. It also weakened France financially to the point where, decades later, they had their own revolution. One war, two revolutions, both consequences. The butterfly effect was working overtime in 1763.</p>
+    </div>
+  </div>
+
+</div><!-- end story-body -->
+
+<div class="story-nav-bar">
+  <a href="all-wars.html" class="story-nav-prev">← All Wars</a>
+  <a href="war-american-revolution.html" class="story-nav-next">American Revolution →</a>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">⚔ CHRONICLES OF WAR</div>
+    <p class="footer-text">History is the greatest story ever told. We just add context — and occasional sarcasm.</p>
+    <p class="footer-copy">© 2024 Chronicles of War</p>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

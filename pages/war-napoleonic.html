@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Napoleonic Wars — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">👑</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-early-modern.html" class="nav-link">Early Modern</a>
+  </div>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/David_-_Napoleon_crossing_the_Alps_-_Malmaison2.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">👑 EARLY MODERN ERA · 1803–1815</div>
+    <h1 class="story-title">The Napoleonic Wars</h1>
+    <p class="story-subtitle">One man's extremely ambitious European road trip — with cannon</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1803–1815</strong>DURATION</div>
+      <div class="story-meta-item"><strong>All of Europe</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~5 Million</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Napoleon Exiled</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">A Small Man with Very Large Ambitions</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg"
+           alt="Napoleon Bonaparte"
+           onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Napoleon Bonaparte — 5'7" in reality, infinite in mythology</div>
+    </div>
+
+    <p>Let us first address the height thing: <span class="person">Napoleon Bonaparte</span> was <span class="highlight">5 feet 7 inches tall</span> — perfectly average for his era. The "short Napoleon" myth came partly from British propaganda and partly from a confusion with French inches vs. English inches. He was not short. He was, however, extraordinarily compensating for something — though historians still debate exactly what.</p>
+
+    <p>Napoleon was born in <span class="place">Corsica</span> in <span class="date">1769</span>, the year France purchased the island from Genoa. He grew up speaking Corsican Italian, learned French as a second language, and spent his childhood dreaming of liberating Corsica from France — the country he would one day command. Irony runs deep in this story.</p>
+
+    <p>He entered the French military academy and was, apparently, absolutely terrible to be around — brilliant, arrogant, and relentlessly ambitious. He read obsessively, worked constantly, and treated anyone he considered less intelligent with barely concealed contempt. His social skills were poor. His military skills were extraordinary. History rewarded the latter.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">⚡ FUN FACT</div>
+      <p>Napoleon could write faster than any secretary could take dictation. He regularly worked 18-hour days. He could apparently wake from a dead sleep, immediately discuss complex strategic problems, and fall back asleep in under a minute. He was, in modern terms, a workaholic nightmare boss.</p>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">From Nobody to Emperor in Under 15 Years</h2>
+
+    <p>The French Revolution had just guillotined the aristocracy and was now busily eating itself. France needed competent military leadership, and <span class="person">Napoleon</span> was unquestionably competent. He saved the Revolution in <span class="date">1795</span> by ordering cannon fire against a royalist mob in Paris — the "whiff of grapeshot" that established his reputation.</p>
+
+    <p>His Italian campaign in <span class="date">1796–97</span> was a masterpiece of speed, deception, and daring that defeated multiple Austrian armies and shocked Europe. Then he went to <span class="place">Egypt</span> — partly to strike at British interests, partly because he genuinely seems to have wanted to be Alexander the Great — discovered that the British Navy could sink his fleet (they did, at the Battle of the Nile), and came home to find France in chaos.</p>
+
+    <p>Perfect timing. In <span class="date">November 1799</span>, Napoleon pulled off a coup d'état known as the 18 Brumaire, making himself First Consul. By <span class="date">1804</span>, he had declared himself Emperor. He crowned himself, reportedly taking the crown from the Pope's hands and placing it on his own head — a gesture that said everything about the man.</p>
+
+    <div class="pull-quote">
+      "He invited the Pope to his coronation and then crowned himself, just to be absolutely clear about who was in charge."
+    </div>
+  </div>
+
+  <div class="story-image-block reveal">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis_David_-_The_Coronation_of_Napoleon_%281805-1807%29.jpg"
+         alt="Coronation of Napoleon"
+         onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+    <div class="img-caption">The Coronation of Napoleon, 1804 — note the Pope sitting in the corner looking increasingly irrelevant</div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">The Wins: When Napoleon Was Terrifyingly Good</h2>
+
+    <p>At his peak, Napoleon controlled most of continental Europe. Let's appreciate the highlights before we get to the disasters:</p>
+
+    <p><span class="highlight">Austerlitz, 1805</span> — Napoleon's greatest victory. Facing a combined Austrian and Russian army numerically superior to his own, he deliberately weakened his right flank to tempt the Allies into attacking it. When they did, he launched his main force through their weakened center, split their army in two, and destroyed it. The battle lasted one day. Austria sued for peace. Russia retreated. <span class="person">Emperor Franz II</span> reportedly wept.</p>
+
+    <p><span class="highlight">Jena-Auerstedt, 1806</span> — Napoleon crushed <span class="place">Prussia</span> so thoroughly that the state essentially ceased to exist. The Prussian army, which had been considered the finest in Europe since Frederick the Great, was annihilated in a single battle. Napoleon entered Berlin two weeks after declaring war. He found time to visit Frederick the Great's tomb and reportedly told his marshals: "Hats off, gentlemen — if he were alive, we would not be here."</p>
+
+    <div class="key-figures">
+      <div class="key-figures-title">⚔ NAPOLEON'S MARSHALS — HIS DREAM TEAM</div>
+      <div class="figures-grid">
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Michel_ney.jpg" alt="Marshal Ney" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Marshal Ney</div>
+          <div class="figure-role">"The Bravest of the Brave" — possibly too brave for his own good</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jean-de-Dieu_Soult_by_Jean-Baptiste_Paulin_Gu%C3%A9rin.jpg" alt="Marshal Soult" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Marshal Soult</div>
+          <div class="figure-role">Master of complex manoeuvers. Also a passionate art thief.</div>
+        </div>
+        <div class="figure-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joachim_Murat.jpg" alt="Marshal Murat" onerror="this.style.background='#1a1a1a'"/>
+          <div class="figure-name">Marshal Murat</div>
+          <div class="figure-role">Best cavalry commander in Europe. Worst fashion sense in history.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">The Disasters: Two Things Napoleon Could Not Defeat</h2>
+
+    <p>Napoleon made two catastrophic strategic errors. Both, in retrospect, should have been predictable. Both destroyed him.</p>
+
+    <p><span class="highlight">Error #1: Spain.</span> In <span class="date">1808</span>, Napoleon decided to put his brother on the Spanish throne and modernize the country. The Spanish people expressed their disagreement by beginning what Napoleon himself called "the Spanish Ulcer" — a brutal guerrilla war that pinned down 250,000 French troops for six years. The Spanish kept fighting even when it made no military sense. They fought in their homes, their churches, their mountains. The term <span class="highlight">"guerrilla warfare"</span> — "little war" in Spanish — was coined here. Napoleon never resolved it.</p>
+
+    <p><span class="highlight">Error #2: Russia.</span> In <span class="date">1812</span>, Napoleon invaded Russia with 685,000 men — the largest army Europe had ever seen. The Russians retreated, burning everything behind them. Napoleon chased them 600 miles to Moscow. When he arrived, <span class="place">Moscow</span> was on fire — the Russians had burned their own capital rather than let him have it. He waited five weeks for the Tsar to surrender. The Tsar did not surrender. Winter arrived. Napoleon began his retreat.</p>
+
+    <div class="story-image-block reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Retreat_from_moscow.jpg"
+           alt="Retreat from Moscow"
+           onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+      <div class="img-caption">The retreat from Moscow, 1812 — 685,000 went in. Around 100,000 staggered out.</div>
+    </div>
+
+    <p>Of the Grande Armée, <span class="highlight">roughly 100,000 men survived</span> the Russian campaign. The rest died of cold, hunger, disease, and Russian cavalry. Napoleon rode ahead, leaving his army to die in the snow. When he arrived back in Paris, he immediately started raising a new army. By this point, even his closest allies were beginning to question his judgment.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FIVE</div>
+    <h2 class="chapter-title">Waterloo: The Final Defeat (And Everyone Has Heard of it)</h2>
+
+    <p>After Russia, it was a cascade. <span class="place">Germany</span> rose up. <span class="place">Austria</span> turned against him. Britain funded everything. At the Battle of Leipzig in <span class="date">1813</span> — the "Battle of Nations" — virtually all of Europe fought Napoleon at once. He lost. He abdicated and was exiled to the island of <span class="place">Elba</span>.</p>
+
+    <p>Remarkably, he escaped Elba, marched on Paris, and the French army sent to arrest him defected to him to a man — including, famously, Marshal Ney, who had promised to bring Napoleon back in an iron cage. This is called the <span class="highlight">Hundred Days</span>.</p>
+
+    <p>Europe re-formed its coalition. On <span class="date">June 18, 1815</span>, at <span class="place">Waterloo</span> in present-day Belgium, Napoleon faced the British under Wellington and the Prussians under Blücher. He needed to defeat them before they combined forces. He almost did it. The Guard advanced. Wellington's line bent but did not break. The Prussians arrived. The Guard was repulsed for the first time in its existence. The French army collapsed in hours.</p>
+
+    <div class="pull-quote">
+      "Wellington said it was 'the nearest run thing you ever saw in your life.' Napoleon, who had come within an inch of winning, spent the rest of his life on a remote island in the South Atlantic, dictating his memoirs and insisting everyone had misunderstood him."
+    </div>
+
+    <p>Napoleon was exiled to <span class="place">Saint Helena</span> — a remote island in the middle of the South Atlantic, specifically chosen for its extreme remoteness. He died there in <span class="date">1821</span>, still arguing, still planning, still absolutely certain he had been betrayed by lesser men. He may have been right about that last part.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">EPILOGUE</div>
+    <h2 class="chapter-title">What Napoleon Actually Left Behind</h2>
+
+    <p>For all the destruction, Napoleon left an extraordinary legacy. The <span class="highlight">Napoleonic Code</span> — his legal reform — became the basis for legal systems across Europe, Latin America, and Louisiana. The idea that a common soldier could rise to command armies inspired generations. The reorganization of states and borders he forced on Europe created the conditions for modern Germany, Italy, and a dozen other nations.</p>
+
+    <p>He ended the Holy Roman Empire (which, famously, was neither holy, Roman, nor an empire). He spread Enlightenment ideas — equality before the law, abolition of feudalism, religious tolerance — across conquered territories. His enemies, to resist him, had to modernize. <span class="place">Prussia</span> reformed its army, its education system, its government. <span class="place">Spain</span> got its first liberal constitution. Even defeat by Napoleon was educational.</p>
+
+    <p>Napoleon remains one of history's most studied figures — both a cautionary tale about unchecked ambition and a genuine military and administrative genius. The contradiction, like most things about him, refuses to resolve itself neatly.</p>
+  </div>
+
+  <div class="prev-next-nav reveal">
+    <a href="war-french-revolution.html" class="nav-war-btn">
+      <div class="nav-war-label">← PREVIOUS WAR</div>
+      <div class="nav-war-title">French Revolutionary Wars</div>
+    </a>
+    <a href="war-crimean.html" class="nav-war-btn" style="text-align:right">
+      <div class="nav-war-label">NEXT WAR →</div>
+      <div class="nav-war-title">Crimean War</div>
+    </a>
+  </div>
+
+</div>
+
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="all-wars.html">All Wars</a>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

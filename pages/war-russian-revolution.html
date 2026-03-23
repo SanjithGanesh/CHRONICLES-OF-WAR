@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Russian Revolution — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <style>
+    :root { --era-accent: #8B1A1A; }
+    .story-hero { background: #0a0000; }
+  </style>
+</head>
+<body class="story-page">
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-emblem">☭</div>
+    <div class="preloader-text">LOADING HISTORY...</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px">
+      <span class="nav-sword">⚔</span>
+      <span class="nav-title">CHRONICLES OF WAR</span>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-interwar.html" class="nav-link">Interwar Era</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Red_Army_Soldiers_-_1917_Revolution.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">🔥 INTERWAR ERA · 1917–1922</div>
+    <h1 class="story-title">The Russian Revolution</h1>
+    <p class="story-subtitle">When 300 years of bad Tsars finally catch up to one really unlucky last Tsar</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1917–1922</strong>DURATION</div>
+      <div class="story-meta-item"><strong>Russia</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~12 Million</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>Tsar → Soviets</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY BODY -->
+<div class="story-body">
+
+  <!-- CHAPTER 1 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">Russia: A Country-Sized Problem</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nicholas_II_of_Russia.jpg"
+           alt="Tsar Nicholas II"
+           onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg'"/>
+      <div class="img-caption">Tsar Nicholas II — the man who inherited a powder keg and kept lighting matches</div>
+    </div>
+
+    <p>Let's set the scene: It's <span class="date">1917</span>. <span class="place">Russia</span> is absolutely enormous — the largest country on Earth — and it is, by most measurable metrics, a complete disaster.</p>
+
+    <p>The peasants (roughly <span class="highlight">80% of the population</span>) are starving. The industrial workers in the cities are being ground into the earth by 14-hour workdays for wages that wouldn't impress a Victorian chimney sweep. The middle class is fed up. The military is collapsing. And sitting at the top of this precarious mountain of misery? <span class="person">Tsar Nicholas II</span> — a man so magnificently unsuited to the job that historians still argue whether he was incompetent or just extraordinarily unlucky. (Spoiler: it was both.)</p>
+
+    <p>The Romanov dynasty had ruled Russia for <span class="highlight">300 years</span>. Three centuries of autocracy, serfdom, and an absolute refusal to share any power with literally anyone. The system was held together by three pillars: the Church (which told people God wanted them to be poor), the Army (which enforced the poverty), and an iron belief that change was not just unwanted but actively sinful.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">⚡ FUN FACT</div>
+      <p>Nicholas II's nickname among his people was "Nicholas the Bloody" — after he approved troops firing on peaceful protesters in 1905. He was, in reality, a gentle family man who loved photography and hated confrontation. History has a cruel sense of irony.</p>
+    </div>
+  </div>
+
+  <!-- KEY FIGURES -->
+  <div class="key-figures reveal">
+    <div class="key-figures-title">⚔ KEY PLAYERS IN THIS DISASTER</div>
+    <div class="figures-grid">
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nicholas_II_of_Russia.jpg"
+             alt="Tsar Nicholas II"
+             onerror="this.style.background='#2a1a1a'"/>
+        <div class="figure-name">Tsar Nicholas II</div>
+        <div class="figure-role">The Last Tsar. Quite literally.</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenin_Cheka.jpg"
+             alt="Vladimir Lenin"
+             onerror="this.style.background='#2a1a1a'"/>
+        <div class="figure-name">Vladimir Lenin</div>
+        <div class="figure-role">Professional revolutionary, full-time troublemaker</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stalin_Full_Image.jpg"
+             alt="Leon Trotsky"
+             onerror="this.style.background='#2a1a1a'"/>
+        <div class="figure-name">Leon Trotsky</div>
+        <div class="figure-role">Built the Red Army. Later got an ice pick to the head.</div>
+      </div>
+      <div class="figure-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Grigori_Rasputin.jpg"
+             alt="Rasputin"
+             onerror="this.style.background='#2a1a1a'"/>
+        <div class="figure-name">Grigori Rasputin</div>
+        <div class="figure-role">The Mad Monk. Notoriously hard to kill.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 2 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The Rasputin Problem (Or: When Your Doctor is Also a Cult Leader)</h2>
+
+    <p>Now, before we get to the revolution itself, we absolutely must discuss <span class="person">Grigori Rasputin</span> — because no history of this era is complete without this extraordinary human being.</p>
+
+    <p>Rasputin was a Siberian peasant mystic who somehow became the most powerful man in the Russian court. How? <span class="person">Tsarina Alexandra</span>'s son, <span class="person">Alexei</span>, had haemophilia — a condition where blood doesn't clot properly, meaning a small cut could be fatal. Rasputin seemed, inexplicably, to be able to calm the boy during episodes. Whether this was hypnosis, psychosomatic effects, or literal divine intervention, the Tsarina concluded: <span class="highlight">God sent this filthy peasant monk to save my son</span>, and nobody could tell her otherwise.</p>
+
+    <p>By <span class="date">1916</span>, with Nicholas away at the front losing World War One, Alexandra was effectively running the government. And she was running it by asking Rasputin. Ministers who displeased Rasputin were fired. Policies he liked were adopted. A peasant from Siberia, through a combination of charisma, mysticism, and sheer audacity, was making decisions for <span class="highlight">the largest country on Earth</span>.</p>
+
+    <div class="pull-quote">
+      "Rasputin was poisoned, shot, beaten, and thrown into an icy river before he finally died. The official cause of death was drowning. The people who killed him genuinely seemed surprised it took that long."
+    </div>
+
+    <p>The Russian nobility, increasingly horrified, conspired to assassinate him in <span class="date">December 1916</span>. The plan: poison him with cyanide-laced wine and cakes. The result: he ate the cakes, drank the wine, and asked for more. Then they shot him. He got up. They shot him again. He ran. They shot him again. Finally, they threw him in the frozen Neva River. He drowned. Even in death, Rasputin was making a statement.</p>
+  </div>
+
+  <!-- IMAGE BLOCK -->
+  <div class="story-image-block reveal">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Crowds_outside_the_State_Duma%2C_Petrograd%2C_during_the_February_Revolution%2C_1917.jpg"
+         alt="February Revolution crowds"
+         onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+    <div class="img-caption">Petrograd, February 1917 — The crowds that told the Tsar it was time to go</div>
+  </div>
+
+  <!-- CHAPTER 3 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">The February Revolution: Russia Fires Its Boss</h2>
+
+    <p>By <span class="date">February 1917</span>, Russia had been fighting World War One for nearly three years. The results were: <span class="highlight">1.7 million Russian soldiers dead</span>, a collapsed economy, and bread shortages in the capital <span class="place">Petrograd</span>. When women textile workers went on strike on International Women's Day (as you do), it triggered a cascade.</p>
+
+    <p>Within days, <span class="highlight">hundreds of thousands of people</span> were in the streets. Nicholas ordered the army to suppress the protests. The army, mostly consisting of cold, hungry, underpaid young men who were also rather tired of the war, largely declined. Whole regiments defected to the protesters.</p>
+
+    <p>The Tsar's advisors sent him a simple message: <span class="highlight">abdicate, or we cannot save you</span>. On <span class="date">March 2, 1917</span>, Nicholas II, last of the Romanovs, ruler of the largest empire on Earth, signed his abdication. He reportedly cried. He reportedly wrote in his diary that evening about the weather. Russia would later add this to the long list of reasons to be frustrated with him.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">⚡ TIMELINE NOTE</div>
+      <p>Russia was still using the Julian calendar in 1917, which ran 13 days behind the Gregorian calendar everyone else used. So the "February Revolution" actually happened in March by everyone else's calendar. The Russians were literally living in the past.</p>
+    </div>
+
+    <p>A <span class="highlight">Provisional Government</span> took over — led by educated, liberal types who believed in democracy and free speech and doing things properly. Noble ideas. Unfortunately, they made one catastrophic decision: they would continue fighting World War One.</p>
+
+    <p>This was, to put it gently, deeply unpopular.</p>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-block reveal">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Russian_Empire_1912.jpg"
+         alt="Russian Empire Map"
+         onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Charge%20of%20the%20Light%20Brigade.jpg'"/>
+    <div class="map-caption">📍 The Russian Empire in 1912 — 22.8 million km², 170 million people, zero functioning democracy</div>
+  </div>
+
+  <!-- CHAPTER 4 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">Lenin Arrives (In a Sealed Train, Like a Biological Weapon)</h2>
+
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lenin_Cheka.jpg"
+           alt="Vladimir Lenin"
+           onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">Vladimir Lenin — professional exile, amateur beard-grower, full-time revolutionary</div>
+    </div>
+
+    <p>Enter <span class="person">Vladimir Ilyich Lenin</span>. Lenin had spent years in exile, writing pamphlets about revolution, dreaming of revolution, and being deeply annoyed that no revolution was happening without him.</p>
+
+    <p>When the February Revolution broke out, Lenin was in <span class="place">Switzerland</span>. He desperately needed to get to Russia. Unfortunately, Russia was at war with <span class="place">Germany</span>. The Germans, however, were delighted by the prospect of shipping Lenin back to Russia. A revolutionary leader who wanted to end the war? Perfect. They provided him a sealed train.</p>
+
+    <p>On <span class="date">April 16, 1917</span>, Lenin arrived at the Finland Station in Petrograd. He stepped off the train and immediately told everyone that the Provisional Government was terrible, the war needed to stop immediately, and that the Bolsheviks (his party) should seize power on behalf of the workers and peasants. His fellow revolutionaries thought this was wildly optimistic. Lenin did not care what his fellow revolutionaries thought.</p>
+
+    <p>His program was brilliantly simple: <span class="highlight">"Peace, Land, Bread."</span> Three words that addressed everything the Russian population had been screaming about for years. The Provisional Government, meanwhile, was offering: "Continue the war, we'll deal with the land thing later, and we're working on the bread."</p>
+
+    <div class="pull-quote">
+      "Peace, Land, Bread" vs "Wait and See" — history has rarely seen a clearer marketing victory.
+    </div>
+  </div>
+
+  <!-- CHAPTER 5 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FIVE</div>
+    <h2 class="chapter-title">The October Revolution: The Bolsheviks Steal the Revolution</h2>
+
+    <p>By <span class="date">October 1917</span>, Russia was in chaos. The Provisional Government had survived one coup attempt (the failed Kornilov Affair), but it was weak, exhausted, and increasingly unpopular. Meanwhile, the Bolsheviks had been patiently arming factory workers and organizing "Red Guards" across Petrograd.</p>
+
+    <p>On the night of <span class="date">October 24–25, 1917</span>, Lenin's Bolsheviks made their move. <span class="person">Leon Trotsky</span> coordinated the operation with the Military Revolutionary Committee. Red Guards and sympathetic soldiers began taking over key points in Petrograd: telephone exchanges, railway stations, the state bank, and bridges.</p>
+
+    <p>The storming of the Winter Palace — the dramatic centerpiece of Soviet mythology — was, in reality, rather anti-climactic. The building was defended by <span class="highlight">a few hundred military cadets and a Women's Battalion of Death</span> (yes, that was their actual name). Most of the defenders simply left. When the Bolsheviks finally entered, they reportedly raided the wine cellar and got spectacularly drunk before doing anything official.</p>
+
+    <div class="image-row reveal">
+      <div class="image-row-item">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/October_Revolution_Battleship_Aurora.jpg"
+             alt="Battleship Aurora"
+             onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">The Aurora fired a blank shot — the signal to begin. Even revolutions have stage cues.</div>
+      </div>
+      <div class="image-row-item">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Winter_Palace_view_from_Palace_Square.jpg"
+             alt="Winter Palace"
+             onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">The Winter Palace — stormed with considerably less drama than Soviet films suggested</div>
+      </div>
+    </div>
+
+    <p>The Provisional Government was arrested. Lenin announced that all power now belonged to the Soviets — councils of workers and soldiers. The Bolsheviks were in charge. The world's first communist state had been born. And now came the hard part: running it.</p>
+  </div>
+
+  <!-- CHAPTER 6 -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER SIX</div>
+    <h2 class="chapter-title">Civil War, Red Terror, and the Execution of the Romanovs</h2>
+
+    <p>The Bolsheviks made peace with Germany in <span class="date">March 1918</span> (the Treaty of Brest-Litovsk), surrendering vast swathes of territory — a humiliating deal that convinced many Russians that the Bolsheviks were either traitors or madmen. This, combined with their dissolution of the democratically elected parliament (when it produced the wrong result), united a bewildering coalition against them: Tsarists, liberals, social revolutionaries, foreign armies from 14 countries, and people who just really didn't like the Bolsheviks.</p>
+
+    <p>The resulting <span class="highlight">Russian Civil War</span> (1918–1922) was brutal beyond imagination. The "White Army" and "Red Army" fought across a country of 170 million people. Both sides employed terror. The Bolsheviks' <span class="highlight">Cheka</span> (secret police) shot thousands. White generals massacred villages they suspected of Bolshevik sympathies.</p>
+
+    <p>As for the Tsar: the Bolsheviks had been holding <span class="person">Nicholas II</span> and his family under house arrest. In <span class="date">July 1918</span>, with White Army forces approaching the town of <span class="place">Yekaterinburg</span>, local Bolsheviks received an order. In the basement of the Ipatiev House, Nicholas, Alexandra, their five children, and four servants were shot, bayoneted, and — when that proved insufficient — beaten to death. Nicholas II, who had inherited an empire and hoped to leave it better than he found it, ended his dynasty in a basement at 2am, still apparently not sure what had gone so wrong.</p>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">📌 AFTERMATH</div>
+      <p>After three years of brutal civil war, the Red Army won. In 1922, the Union of Soviet Socialist Republics (USSR) was officially formed. Lenin died in 1924. A man named Joseph Stalin, who had seemed relatively minor throughout all of this, quietly accumulated enough power to take control. And that, as they say, is another story — and a significantly worse one.</p>
+    </div>
+  </div>
+
+  <!-- WHAT CHANGED -->
+  <div class="story-chapter reveal">
+    <div class="chapter-number">EPILOGUE</div>
+    <h2 class="chapter-title">Why This Still Matters</h2>
+
+    <p>The Russian Revolution reshaped the entire 20th century. It created the Soviet Union — a superpower that would define the Cold War for seventy years. It demonstrated that communist revolution was possible, inspiring movements across Asia, Africa, and Latin America. It terrified Western governments into making social reforms they'd previously rejected (nothing motivates a capitalist like the possibility of a workers' uprising).</p>
+
+    <p>And it replaced one form of authoritarian rule with another — something the idealistic revolutionaries of 1917 could not have imagined, and something <span class="person">Lenin</span> himself arguably did not intend. The gap between revolutionary ideals and revolutionary reality would define the Soviet experience for the next seventy years.</p>
+
+    <p>The Romanovs were officially recognized as martyrs by the Russian Orthodox Church in 2000. The city of Petrograd became Leningrad in 1924, and then St. Petersburg again in 1991 — history's most expensive game of rename-the-city. The Ipatiev House was demolished by Boris Yeltsin in 1977, before anyone knew he'd end up running the country. On the same site today stands the Church on the Blood. Russia, like all countries with complicated histories, is still arguing about what all of it means.</p>
+  </div>
+
+  <!-- PREV/NEXT -->
+  <div class="prev-next-nav reveal">
+    <a href="war-ww1.html" class="nav-war-btn">
+      <div class="nav-war-label">← PREVIOUS WAR</div>
+      <div class="nav-war-title">World War I</div>
+    </a>
+    <a href="war-russian-civil.html" class="nav-war-btn" style="text-align:right">
+      <div class="nav-war-label">NEXT WAR →</div>
+      <div class="nav-war-title">Russian Civil War</div>
+    </a>
+  </div>
+
+</div>
+
+<footer id="main-footer">
+  <div class="footer-emblem">⚔</div>
+  <div class="footer-title">CHRONICLES OF WAR</div>
+  <p class="footer-tagline">History: Because apparently we need to be reminded how bad things can get.</p>
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="all-wars.html">All Wars</a>
+  </div>
+</footer>
+
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

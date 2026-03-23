@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Chinese Civil War — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="story-page">
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">🐉</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-interwar.html" class="nav-link">Interwar</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">🐉 INTERWAR & POST-WW2 · 1927–1949</div>
+    <h1 class="story-title">The Chinese Civil War</h1>
+    <p class="story-subtitle">Mao Zedong vs. Chiang Kai-shek: Twenty years of intermittent fighting, one World War in the middle, and the birth of modern China</p>
+    <div class="story-meta">
+      <div class="story-meta-item"><strong>1927–1949</strong>DURATION</div>
+      <div class="story-meta-item"><strong>China</strong>LOCATION</div>
+      <div class="story-meta-item"><strong>~8 Million+</strong>CASUALTIES</div>
+      <div class="story-meta-item"><strong>PRC Founded</strong>RESULT</div>
+    </div>
+  </div>
+</section>
+
+<div class="story-body">
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER ONE</div>
+    <h2 class="chapter-title">Two Visions for China</h2>
+    <div class="story-image-row">
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.jpg" alt="Mao Zedong" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Mao Zedong — Communist leader, poet, military strategist, and later architect of policies that killed tens of millions</div>
+      </div>
+      <div class="story-image-col">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chiang_Kai-shek_%28%E8%94%A3%E4%B8%AD%E6%AD%A3%29.jpg" alt="Chiang Kai-shek" onerror="this.style.background='#1a1a1a'"/>
+        <div class="img-caption">Chiang Kai-shek — Nationalist leader, US-backed, eventually retreated to Taiwan where his government still claims to be the legitimate government of China</div>
+      </div>
+    </div>
+    <p>After the fall of the Qing dynasty in <span class="date">1912</span>, China struggled to find a new political identity. Two major forces emerged: the <span class="highlight">Kuomintang (KMT)</span>, the Nationalist Party led by <span class="person">Chiang Kai-shek</span>, and the <span class="highlight">Chinese Communist Party (CCP)</span>, whose military forces were led by <span class="person">Mao Zedong</span>.</p>
+    <p>They had briefly cooperated against warlordism. Then in <span class="date">1927</span>, Chiang turned on his Communist allies in a massacre — thousands were killed in Shanghai and other cities. The civil war had begun. The Communists fled to the countryside and began building peasant support. Chiang controlled the cities, the economy, and Western backing. Mao controlled the villages, the ideology, and a growing revolutionary movement.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER TWO</div>
+    <h2 class="chapter-title">The Long March: 8,000 Miles to Survive</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Long_March_path.jpg" alt="Long March route map" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Long March route, 1934-1935 — 8,000 miles through mountains and swamps to escape KMT encirclement. Of 80,000 who started, around 8,000 finished.</div>
+    </div>
+    <p>In <span class="date">1934</span>, surrounded by Nationalist forces, the Communist Red Army made a desperate decision: retreat. They broke out of encirclement and began the <span class="highlight">Long March</span> — a 8,000-mile trek through some of China's most brutal terrain, including mountains, swamps, and regions controlled by hostile warlords.</p>
+    <p>Of approximately 80,000 who began the march, roughly 8,000 survived to reach Shaanxi province a year later. The death rate was staggering. But the survivors were hardened veterans, and the Long March became the founding legend of Communist China — the story of survival through impossible odds that Mao used to justify everything that followed. It was simultaneously genuine heroism and, in Mao's hands, the greatest propaganda event in Chinese history.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER THREE</div>
+    <h2 class="chapter-title">Japan Invades, the Civil War Pauses (Mostly)</h2>
+    <div class="story-image-inline">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nanking_bodies.jpg" alt="Nanjing Massacre" onerror="this.style.background='#1a1a1a'"/>
+      <div class="img-caption">The Nanjing Massacre, December 1937 — Japanese forces killed an estimated 200,000-300,000 Chinese civilians and POWs in six weeks. China has never forgotten.</div>
+    </div>
+    <p>In <span class="date">1937</span>, Japan launched a full-scale invasion of China. The civil war was theoretically suspended — Nationalists and Communists declared a <span class="highlight">United Front</span> against Japan. In practice, both sides spent as much time maneuvering against each other as fighting Japan, preserving their forces for the post-war settlement they both knew was coming.</p>
+    <p>Japan committed atrocities on a massive scale — most infamously the <span class="highlight">Nanjing Massacre</span> of December 1937, where Japanese troops killed approximately 200,000-300,000 civilians and POWs in six weeks. Eight years of Japanese occupation killed an estimated 8-20 million Chinese. When Japan surrendered in 1945, China had endured catastrophic losses — and the civil war immediately resumed.</p>
+  </div>
+
+  <div class="story-chapter reveal">
+    <div class="chapter-number">CHAPTER FOUR</div>
+    <h2 class="chapter-title">Mao Wins. Taiwan Is Created.</h2>
+    <p>After WW2, the civil war resumed in earnest. The Communists had used the Japanese occupation to expand their base among the peasantry. The Nationalists, despite American backing and initial territorial advantages, were plagued by corruption, inflation, and collapsing morale. City after city fell to Communist forces.</p>
+    <p>On <span class="date">October 1, 1949</span>, <span class="person">Mao Zedong</span> stood in Beijing's Tiananmen Square and announced: <span class="highlight">"The Chinese people have stood up."</span> The People's Republic of China was founded. Two months later, <span class="person">Chiang Kai-shek</span> and approximately 1.5 million Nationalist soldiers and civilians retreated to the island of <span class="place">Taiwan</span>, taking China's gold reserves and claiming to be the legitimate government of China.</p>
+    <p>Both claims — the PRC and the ROC — persisted. Taiwan still exists as a democracy. The PRC still claims it. The question of Taiwan remains one of the most dangerous flashpoints in the world today, still unresolved from a civil war that technically never ended.</p>
+
+    <div class="story-pull-quote">
+      <blockquote>"The Chinese people have stood up."</blockquote>
+      <cite>— Mao Zedong, October 1, 1949, Tiananmen Square. Ending a century of humiliation with one sentence.</cite>
+    </div>
+
+    <div class="fun-fact">
+      <div class="fun-fact-label">🔗 WHY IT MATTERS</div>
+      <p>The Chinese Civil War's outcome shapes the world today: a communist China that became the world's second largest economy, a Taiwan that became a democracy and the world's leading semiconductor manufacturer, and a cross-strait tension that could, in any given decade, erupt into a conflict that would dwarf anything since WW2. The war that ended in 1949 isn't finished — it just changed form.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="story-nav-bar">
+  <a href="war-spanish-civil.html" class="story-nav-prev">← Spanish Civil War</a>
+  <a href="war-ww2.html" class="story-nav-next">World War II →</a>
+</div>
+
+<footer class="main-footer"><div class="footer-inner"><div class="footer-logo">⚔ CHRONICLES OF WAR</div><p class="footer-copy">© 2024 Chronicles of War</p></div></footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>

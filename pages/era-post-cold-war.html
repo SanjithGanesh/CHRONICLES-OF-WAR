@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post-Cold War Era — Chronicles of War</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/landing.css" />
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><div class="preloader-emblem">📺</div><div class="preloader-text">LOADING HISTORY...</div><div class="preloader-bar"><div class="preloader-fill"></div></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="main-nav">
+  <div class="nav-logo"><a href="../index.html" style="display:flex;align-items:center;gap:10px"><span class="nav-sword">⚔</span><span class="nav-title">CHRONICLES OF WAR</span></a></div>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="all-wars.html" class="nav-link">All Wars</a>
+    <a href="era-post-cold-war.html" class="nav-link active">Post-Cold War</a>
+  </div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</nav>
+
+<section class="story-hero" style="height:55vh;">
+  <div class="story-hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gulf_war_soldiers.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+  <div class="story-hero-content">
+    <div class="story-era-tag">📺 1990–2010</div>
+    <h1 class="story-title" style="font-size:clamp(2rem,5vw,4rem);">The Post-Cold War Era</h1>
+    <p class="story-subtitle">The "New World Order" lasted about a decade — then came the Gulf War, genocide in Bosnia, 9/11, and Iraq</p>
+  </div>
+</section>
+
+<section style="padding:60px 40px;max-width:1200px;margin:0 auto;">
+  <div class="section-header reveal" style="text-align:center;margin-bottom:60px;">
+    <div style="font-family:'Special Elite',cursive;color:var(--gold);letter-spacing:4px;font-size:0.85rem;margin-bottom:12px;">THE END OF HISTORY THAT WASN'T</div>
+    <h2 style="font-family:'Cinzel Decorative',serif;font-size:clamp(1.5rem,3vw,2.5rem);color:var(--parchment);">Three Wars That Defined the Post-Cold War World</h2>
+    <p style="color:rgba(242,232,208,0.7);max-width:600px;margin:20px auto;font-family:'Crimson Pro',serif;font-size:1.1rem;">Francis Fukuyama famously declared the "End of History" in 1992. Three wars later, history had made its opinion clear.</p>
+  </div>
+
+  <div class="era-cards-grid">
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gulf_war_soldiers.jpg')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1990–1991 · KUWAIT & IRAQ</div>
+        <h3 class="era-card-title">The Gulf War</h3>
+        <p class="era-card-excerpt">The first war televised live. 100 hours of ground combat. Saddam's spectacular miscalculation.</p>
+        <a href="war-gulf.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Siege_of_Sarajevo.png')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">1991–2001 · YUGOSLAVIA</div>
+        <h3 class="era-card-title">Yugoslav Wars</h3>
+        <p class="era-card-excerpt">Genocide returned to Europe. The longest siege of a capital since WW2. The world failed to act at Srebrenica.</p>
+        <a href="war-yugoslav.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+
+    <div class="era-card reveal">
+      <div class="era-card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/US_Marines_Iraq_2003.JPEG')"></div>
+      <div class="era-card-body">
+        <div class="era-card-meta">2003–2011 · IRAQ</div>
+        <h3 class="era-card-title">The Iraq War</h3>
+        <p class="era-card-excerpt">WMDs that didn't exist. A three-week victory that became an eight-year occupation. The war that created ISIS.</p>
+        <a href="war-iraq.html" class="era-card-link">READ THE STORY →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="text-align:center;margin-top:60px;">
+    <a href="all-wars.html" style="font-family:'Cinzel',serif;color:var(--gold);border:1px solid var(--gold);padding:14px 32px;letter-spacing:3px;font-size:0.85rem;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--void)'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">VIEW ALL ERAS →</a>
+  </div>
+</section>
+
+<footer class="main-footer"><div class="footer-inner"><div class="footer-logo">⚔ CHRONICLES OF WAR</div><p class="footer-copy">© 2024 Chronicles of War</p></div></footer>
+<script src="../js/particles.js"></script>
+<script src="../js/cursor.js"></script>
+<script src="../js/main.js"></script>
+  <script src="../js/imgfix.js"></script>
+</body>
+</html>
